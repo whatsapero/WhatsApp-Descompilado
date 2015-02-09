@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2"
+        <LinearLayout android:orientation="0" android:paddingTop="6dp" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:layout_gravity="13" android:id="@id/contacts_title" android:paddingTop="2dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="-1dp" android:layout_weight="1.0" android:textAllCaps="true" style="@style/Text.FieldHeader" />
+            <TextView android:textSize="14sp" android:layout_gravity="15" android:id="@id/contacts_counter" android:paddingLeft="3dp" android:paddingTop="2dp" android:paddingRight="16dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="-1dp" style="@style/Text.Field" />
+        </LinearLayout>
+        <RelativeLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="-1" android:layout_height="-2">
+            <AutoCompleteTextView android:textSize="@dimen/autocomplete_text_size" android:id="@id/autocomplete_contact_name" android:background="@drawable/autocomplete_edit" android:paddingLeft="10dp" android:paddingRight="32dp" android:layout_width="-1" android:layout_height="-2" android:hint="@string/broadcast_recipient_hint" android:autoText="false" android:popupBackground="@drawable/autocomplete_dropdown" android:inputType="61" android:dropDownAnchor="@id/autocomplete_contact_anchor" android:imeOptions="6" android:dropDownHeight="-2" android:dropDownVerticalOffset="-3dp" />
+            <ImageButton android:id="@id/add_contact_btn" android:background="@drawable/selector_orange_gradient" android:padding="10dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="2dp" android:src="@drawable/add_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/autocomplete_contact_anchor" android:layout_width="-1" android:layout_height="1dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" />
+        <ListView android:id="0x102000a" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="-1" android:layout_height="0dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@drawable/div" android:choiceMode="0" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

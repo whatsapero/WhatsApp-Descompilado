@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2"
+    <LinearLayout android:gravity="10" android:orientation="0" android:background="@drawable/selector_orange_gradient" android:paddingLeft="@dimen/list_row_padding" android:paddingRight="@dimen/list_row_padding" android:clipChildren="false" android:layout_width="-1" android:layout_height="@dimen/group_participant_row_height">
+        <ImageView android:id="@id/avatar" android:layout_width="@dimen/thumbnail_size" android:layout_height="@dimen/thumbnail_size" android:layout_marginTop="@dimen/thumbnail_padding" android:layout_marginRight="@dimen/thumbnail_padding_right" android:layout_marginBottom="@dimen/thumbnail_padding" android:src="@drawable/avatar_contact" android:scaleType="3" android:contentDescription="@string/contact_avatar_image" />
+        <LinearLayout android:orientation="1" android:clipChildren="false" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0"
+            <LinearLayout android:orientation="0" android:clipChildren="false" android:layout_width="-1" android:layout_height="-2">
+                <com.whatsapp.TextEmojiLabel android:gravity="3" android:id="@id/name" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0" style="@style/ListItemTitle" />
+                <TextView android:id="@id/owner" android:visibility="2" style="@style/TextGroupAdmin" />
+            </LinearLayout>
+            <LinearLayout android:orientation="0" android:clipChildren="false" android:layout_width="-1" android:layout_height="-2">
+                <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:layout_gravity="3" android:id="@id/status" android:layout_width="0dp" android:layout_height="-2" android:text="@string/status" android:layout_weight="1.0" style="@style/ListItemSubtitle" />
+                <TextView android:textSize="14sp" android:textColor="@color/dark_gray" android:id="@id/push_name" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@drawable/divider_gray" android:layout_width="-1" android:layout_height="0,5dp" />
+</LinearLayout>

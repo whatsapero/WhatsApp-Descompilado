@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="250dp" android:minHeight="110dp" android:updatePeriodMillis="86400000" android:initialLayout="@layout/widget" android:previewImage="@drawable/widget_preview" android:resizeMode="3" android:minResizeWidth="40dp" android:minResizeHeight="40dp" android:initialKeyguardLayout="@layout/widget" android:widgetCategory="3" />

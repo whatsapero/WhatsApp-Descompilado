@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="-1" android:layout_height="-2">
+    <LinearLayout android:orientation="1" android:id="@id/footer" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18sp" android:textColor="#6b7a81" android:gravity="13" android:id="@id/no_participant" android:background="0x106000b" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:text="@string/cannot_send_not_a_group_participant" />
+        <RelativeLayout android:id="@id/edit_layout" android:layout_width="-1" android:layout_height="-2">
+            <FrameLayout android:id="@id/buttons" android:layout_width="-2" android:layout_height="-2" android:layout_alignBottom="@id/text_entry_layout" android:layout_alignParentRight="true">
+                <ImageButton android:id="@id/send" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/send_button_selector" android:scaleType="3" style="@style/ActionBarButtonStyle" />
+                <ImageButton android:id="@id/voice_note_btn" android:visibility="2" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/input_mic" android:scaleType="5" style="@style/ActionBarButtonStyle" />
+            </FrameLayout>
+            <LinearLayout android:orientation="0" android:id="@id/text_entry_layout" android:layout_width="-1" android:layout_height="-2" android:layout_toLeftOf="@id/buttons">
+                <View android:id="@id/emoji_ancor" android:layout_width="0dp" android:layout_height="-1" />
+                <ImageButton android:layout_gravity="50" android:id="@id/emoji_picker_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/emoji_btn" style="@style/ActionBarButtonStyle" />
+                <com.whatsapp.ConversationTextEntry android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="2000000" android:layout_gravity="10" android:id="@id/entry" android:scrollbars="200" android:layout_width="0dp" android:layout_height="-2" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginBottom="@dimen/conversation_text_entry_marginbottom" android:maxLines="6" android:capitalize="1" android:autoText="true" android:layout_weight="1.0" android:imeOptions="4" android:scrollbarFadeDuration="300" android:scrollbarDefaultDelayBeforeFade="200" />
+                <ImageButton android:layout_gravity="50" android:id="@id/camera_btn" android:visibility="2" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_camera" android:scaleType="5" style="@style/ActionBarButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="0" android:id="@id/voice_note_layout" android:visibility="2" android:clipChildren="false" android:layout_width="-1" android:layout_height="-2" android:layout_toLeftOf="@id/buttons" android:layout_centerVertical="true">
+                <FrameLayout android:id="@id/voice_note_indicator" android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp">
+                    <ImageView android:id="@id/voice_note_pulse" android:layout_width="-1" android:layout_height="-1" android:src="@drawable/recording_mic_red" android:scaleType="5" />
+                </FrameLayout>
+                <TextView android:textSize="26dp" android:textColor="#4b4a49" android:gravity="13" android:id="@id/voice_note_info" android:layout_width="-2" android:layout_height="48dp" android:text="00:00" android:lines="1" android:singleLine="true" />
+                <FrameLayout android:clipChildren="true" android:layout_width="-2" android:layout_height="48dp" android:layout_weight="1.0"
+                    <FrameLayout android:id="@id/voice_note_slide_to_cancel_scroller" android:paddingLeft="8dp" android:clipChildren="true" android:layout_width="-1" android:layout_height="48dp">
+                        <TextView android:textSize="16dp" android:textColor="#737271" android:ellipsize="0" android:gravity="15" android:layout_gravity="5" android:id="@id/voice_note_slide_to_cancel" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="-2" android:layout_height="48dp" android:text="@string/audio_note_slide_to_cancel" android:lines="1" android:scrollHorizontally="false" android:singleLine="true" />
+                    </FrameLayout>
+                    <View android:id="@id/voice_note_slide_to_cancel_animation" android:background="@drawable/slide_cancel_animation_background" android:layout_width="96dp" android:layout_height="48dp" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/emoji_picker_holder" android:background="@color/emoji_popup_body" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+    </LinearLayout>
+    <ImageView android:id="@id/voice_cancel_animation" android:visibility="2" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/recording_mic_red" android:scaleType="5" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="1" android:id="@id/voice_cancel_trashcan" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="48dp" android:layout_height="48dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/voice_cancel_trashcan_lid" android:layout_width="48dp" android:layout_height="-2" android:src="@drawable/bucket_lid" android:scaleType="5" />
+        <ImageView android:layout_width="48dp" android:layout_height="-2" android:src="@drawable/bucket_body" android:scaleType="5" />
+    </LinearLayout>
+</merge>

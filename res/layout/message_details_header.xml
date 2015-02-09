@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="-1" android:layout_height="-2">
+    <View android:background="@drawable/message_details_header_background" android:layout_width="-2" android:layout_height="54dp" />
+    <LinearLayout android:gravity="5" android:layout_gravity="5" android:orientation="0" android:id="@id/conversation_row_center" android:paddingLeft="8dp" android:paddingTop="54dp" android:paddingRight="8dp" android:paddingBottom="16dp" android:layout_width="-2" android:layout_height="-2" />
+</FrameLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.actionbarsherlock.internal.view.menu.ActionMenuView android:gravity="10" android:layout_width="-2" android:layout_height="-2" android:divider="?attr/actionBarDivider" android:dividerPadding="12dp" />

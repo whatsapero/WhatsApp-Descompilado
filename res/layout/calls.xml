@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:id="0x102000a" android:layout_width="-1" android:layout_height="-1" android:textFilterEnabled="true" android:cacheColorHint="0x106000d" android:divider="@drawable/divider_gray" android:dividerHeight="0,5dp" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+    <FrameLayout android:gravity="11" android:id="0x1020004" android:background="#fafafa" android:layout_width="-1" android:layout_height="-1">
+        <LinearLayout android:layout_gravity="11" android:orientation="1" android:id="@id/calls_empty_no_calls" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="-1" android:layout_height="-2">
+            <ImageView android:layout_gravity="11" android:paddingTop="32dp" android:layout_width="-2" android:layout_height="0dp" android:src="@drawable/icon_calls_empty" android:layout_weight="1.0" />
+            <TextView android:textSize="17sp" android:textColor="#565656" android:gravity="11" android:paddingTop="48dp" android:paddingBottom="48dp" android:layout_width="-1" android:layout_height="-2" android:text="@string/welcome_calls_message" style="@style/Text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="1" android:orientation="1" android:id="@id/calls_search_empty" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="11" android:id="@id/search_no_call_matches" android:padding="12dp" android:layout_width="-1" android:layout_height="-2" android:minHeight="67dp" android:text="@string/no_calls" />
+        </LinearLayout>
+        <include android:id="@id/calls_empty_no_contacts" android:visibility="2" layout="@layout/empty_tell_a_friend" />
+    </FrameLayout>
+</LinearLayout>

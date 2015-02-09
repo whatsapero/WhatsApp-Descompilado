@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1"
+        <LinearLayout android:gravity="11" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="96dp">
+            <ImageButton android:id="@id/audio_control_btn" android:padding="0dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/mviewer_play" style="@style/ActionBarButtonStyle" />
+            <SeekBar android:id="@id/audio_seekbar" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:maxHeight="13dp" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/audio_scrubber_progress" android:progressDrawable="@drawable/audio_scrubber_progress" android:minHeight="13dp" android:thumb="@drawable/audio_scrubber_thumb" android:thumbOffset="16dp" android:layout_weight="1.0" />
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@id/progress_tv" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="00:00" />
+        </LinearLayout>
+        <ImageView android:id="@id/audio_icon" android:paddingTop="32dp" android:paddingBottom="80dp" android:layout_width="-1" android:layout_height="-1" android:src="@drawable/mviewer_thumb_audio" android:scaleType="3" />
+    </LinearLayout>
+    <include layout="@layout/media_view_footer" />
+</FrameLayout>

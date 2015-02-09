@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ebebeb" android:padding="8dp" android:layout_width="-1" android:layout_height="-1" android:fillViewport="true">
+    <LinearLayout android:orientation="1" android:background="@drawable/panel" android:paddingLeft="@dimen/card_h_padding2" android:paddingTop="@dimen/card_v_padding2" android:paddingRight="@dimen/card_h_padding2" android:paddingBottom="@dimen/card_v_padding2" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="18sp" android:textColor="#ff707070" android:id="@id/spam_warning_info_textview" android:layout_width="-1" android:layout_height="-2" android:fontFamily="sans-serif-light" />
+        <com.whatsapp.CircularProgressBar android:layout_gravity="11" android:id="@id/progress_bar" android:visibility="2" android:layout_width="225dp" android:layout_height="225dp" android:layout_marginBottom="0dp" android:indeterminateOnly="false" />
+        <Button android:textSize="20sp" android:textColor="0x106000b" android:id="@id/btn_spam_warning_learn_more" android:background="@drawable/btn_green" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="12dp" android:text="@string/spam_learn_more" />
+        <TextView android:textSize="14sp" android:textColor="#99707070" android:id="@id/spam_warning_generic_data_connection_missing_textview" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="12dp" android:text="@string/spam_generic_data_connection_missing" android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+</ScrollView>

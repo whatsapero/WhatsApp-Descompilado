@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout whatsapp:layout_width="-1" whatsapp:layout_height="-1">
+    <ListView whatsapp:id="0x102000a" whatsapp:scrollbars="0" whatsapp:layout_width="-1" whatsapp:layout_height="-1" whatsapp:layout_marginLeft="@dimen/card_h_padding" whatsapp:layout_marginRight="@dimen/card_h_padding" whatsapp:listSelector="0x106000d" whatsapp:cacheColorHint="#00000000" whatsapp:divider="@pbe/MD5" whatsapp:dividerHeight="0dp" whatsapp:choiceMode="0" whatsapp:headerDividersEnabled="false" whatsapp:footerDividersEnabled="false" />
+    <RelativeLayout whatsapp:gravity="10" whatsapp:orientation="0" whatsapp:id="@id/header" whatsapp:background="@drawable/panel_full_width" whatsapp:layout_width="-1" whatsapp:layout_height="@dimen/info_screen_header">
+        <FrameLayout whatsapp:gravity="11" whatsapp:id="@id/profile_pic_frame" whatsapp:paddingLeft="9dp" whatsapp:paddingTop="3dp" whatsapp:paddingBottom="5dp" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_alignParentLeft="true" whatsapp:layout_centerVertical="true">
+            <ProgressBar whatsapp:layout_gravity="11" whatsapp:id="@id/photo_progress" whatsapp:visibility="2" whatsapp:layout_width="-2" whatsapp:layout_height="-2" style="?unknown_attr_ref: 1010288" />
+            <com.whatsapp.ThumbnailPickerButton whatsapp:id="@id/photo_btn" whatsapp:background="#00000000" whatsapp:padding="2dp" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:src="@drawable/avatar_contact" whatsapp:scaleType="5" whatsapp:contentDescription="@string/profile_photo" whatsapp:tbtnRadius="@dimen/mid_avatar_radius" />
+        </FrameLayout>
+        <LinearLayout whatsapp:orientation="1" whatsapp:id="@id/subject_layout" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_marginLeft="10dp" whatsapp:layout_marginRight="10dp" whatsapp:layout_toRightOf="@id/profile_pic_frame" whatsapp:layout_centerVertical="true">
+            <com.whatsapp.TextEmojiLabel whatsapp:textSize="22sp" whatsapp:textColor="@color/list_item_title" whatsapp:ellipsize="3" whatsapp:gravity="3" whatsapp:layout_gravity="3" whatsapp:id="@id/conversation_contact_name" whatsapp:layout_width="-1" whatsapp:layout_height="-2" whatsapp:maxLines="2" whatsapp:singleLine="false" />
+            <TextView whatsapp:ellipsize="3" whatsapp:gravity="3" whatsapp:layout_gravity="3" whatsapp:id="@id/conversation_contact_status" whatsapp:layout_width="-1" whatsapp:layout_height="-2" whatsapp:maxLines="2" whatsapp:singleLine="false" style="@style/ListItemSubtitle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

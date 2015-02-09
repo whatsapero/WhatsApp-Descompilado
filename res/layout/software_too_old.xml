@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:text="@string/app_name" style="@style/FullScreenDialogTitle" />
+    <ScrollView android:background="#ffeaeaea" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:gravity="1" android:orientation="1" android:padding="24dp" android:layout_width="-1" android:layout_height="-2">
+            <ImageView android:layout_width="-2" android:layout_height="-2" android:src="@drawable/too_old_version" />
+            <TextView android:id="@id/software_too_old" android:paddingTop="20dp" android:layout_width="-1" android:layout_height="-2" style="@style/Text.Field" />
+        </LinearLayout>
+    </ScrollView>
+    <View style="@style/FullScreenDialogSeparator" />
+    <LinearLayout android:gravity="11" android:layout_gravity="11" android:background="@color/full_screen_footer" android:layout_width="-1" android:layout_height="-2">
+        <Button android:gravity="11" android:layout_gravity="11" android:id="@id/download" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="280dp" android:layout_height="-2" android:layout_margin="10dp" android:text="@string/button_download" style="@style/ScreenFooterButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ScrollView android:layout_width="-1" android:layout_height="-1">
+        <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1"
+            <LinearLayout android:orientation="1" android:background="@drawable/panel_full_width" android:paddingLeft="@dimen/horizontal_padding" android:paddingTop="6dp" android:paddingRight="@dimen/horizontal_padding" android:layout_width="-1" android:layout_height="-2">
+                <EditText android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="2000000" android:textColor="#000000" android:gravity="30" android:id="@id/describe_problem_description_et" android:scrollbars="200" android:layout_width="-1" android:layout_height="-2" android:hint="@string/describe_problem_description" android:maxLines="4" android:minLines="4" android:selectAllOnFocus="true" android:capitalize="1" android:autoText="true" android:imeOptions="6" android:scrollbarFadeDuration="300" android:scrollbarDefaultDelayBeforeFade="200" />
+                <Button android:textStyle="1" android:layout_gravity="11" android:id="@id/describe_problem_help" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" android:text="@string/faq" />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="@dimen/card_h_padding" android:layout_marginTop="@dimen/card_v_padding" android:layout_marginRight="@dimen/card_h_padding" android:layout_marginBottom="@dimen/card_v_padding">
+                <FrameLayout style="@style/CardHeader">
+                    <TextView android:id="@id/screenshots_title" android:text="@string/describe_problem_screenshots" style="@style/CardTitle" />
+                    <View style="@style/CardSeparator" />
+                </FrameLayout>
+                <LinearLayout android:orientation="0" android:id="@id/screenshots" android:layout_width="-1" android:layout_height="-1" android:layout_margin="8dp" /> /> />
+    </ScrollView> />

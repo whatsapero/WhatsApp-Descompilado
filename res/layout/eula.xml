@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/eula_layout" android:background="@drawable/background" android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:layout_width="-1" android:layout_height="-1" android:layout_above="@id/eula_bottom_bar" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="11" android:layout_gravity="11" android:layout_width="-1" android:layout_height="-1">
+            <TextView android:textSize="20sp" android:textStyle="0" android:textColor="#ffffff" android:gravity="11" android:layout_gravity="11" android:id="@id/eula_title" android:paddingTop="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/eula_title" />
+            <ImageView android:layout_gravity="1" android:id="@id/logo" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:src="@drawable/about_logo" android:layout_below="@id/eula_title" />
+            <TextView android:textSize="17sp" android:textColor="#d6dbda" android:gravity="11" android:layout_gravity="11" android:id="@id/eula_description" android:paddingLeft="4dp" android:paddingTop="10dp" android:paddingRight="4dp" android:paddingBottom="6dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/eula_description" android:layout_below="@id/logo" />
+            <ImageView android:layout_gravity="1" android:id="@id/eula_platform_bar" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:src="@drawable/platforms" android:layout_below="@id/eula_description" />
+            <LinearLayout android:gravity="11" android:layout_gravity="11" android:layout_width="-1" android:layout_height="-2" android:layout_below="@id/eula_platform_bar">
+                <Button android:textSize="17sp" android:textColor="#49d0fc" android:gravity="11" android:layout_gravity="11" android:id="@id/eula_view" android:background="@drawable/selector_transparent_gray" android:padding="6dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="10dp" android:layout_marginBottom="0dp" android:minWidth="128dp" android:text="@string/eula_terms_of_service" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_width="-2" android:layout_height="10dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="1" android:id="@id/eula_bottom_bar" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+        <TextView android:layout_above="@id/eula_accept" style="@style/FullScreenDialogSeparator" />
+        <LinearLayout android:gravity="11" android:layout_gravity="11" android:background="@color/full_screen_footer" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+            <Button android:gravity="11" android:layout_gravity="11" android:id="@id/eula_accept" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="280dp" android:layout_height="-2" android:layout_margin="5dp" android:text="@string/eula_agree" android:layout_centerInParent="true" style="@style/ScreenFooterButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

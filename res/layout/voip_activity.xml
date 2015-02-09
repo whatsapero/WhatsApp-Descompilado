@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="0x106000c" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:textSize="27sp" android:textColor="0x106000b" android:gravity="3" android:id="@id/name" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-2" android:fontFamily="sans-serif-light" />
+    <LinearLayout android:layout_width="-1" android:layout_height="-2" android:layout_alignTop="@id/name" android:layout_alignRight="@id/name" android:layout_alignBottom="@id/name">
+        <View android:layout_width="0dp" android:layout_height="-1" android:layout_weight="2.0" />
+        <Button android:id="@id/debug_btn" android:background="0x106000d" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="1" android:id="@id/footer" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+        <com.whatsapp.AnswerCallView android:id="@id/answer_call_slider" android:layout_width="-1" android:layout_height="78dp" />
+        <FrameLayout android:id="@id/answer_call_btns" android:layout_width="-1" android:layout_height="78dp">
+            <ImageButton android:layout_gravity="11" android:id="@id/reject_with_message" android:background="@drawable/reject_with_message_btn_background" android:padding="12dp" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/ic_reject_with_message" android:contentDescription="@string/voip_call_goto_chat_description" />
+        </FrameLayout>
+        <LinearLayout android:orientation="0" android:id="@id/call_btns" android:visibility="2" android:layout_width="-1" android:layout_height="78dp">
+            <ImageButton android:id="@id/end_call_btn" android:background="@drawable/btn_end_call_background" android:layout_width="0dp" android:layout_height="-1" android:src="@drawable/btn_end_call" android:layout_weight="1.0" android:contentDescription="@string/voip_call_end_button_description" />
+            <ImageButton android:id="@id/voip_call_btn" android:background="@drawable/btn_start_call_background" android:visibility="2" android:layout_width="0dp" android:layout_height="-1" android:src="@drawable/btn_start_call" android:layout_weight="1.0" android:contentDescription="@string/voip_call_start_button_description" />
+        </LinearLayout>
+        <LinearLayout android:orientation="0" android:id="@id/audio_btns" android:visibility="2" android:layout_width="-1" android:layout_height="78dp"
+            <LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                <ImageButton android:id="@id/speaker_btn" android:background="#111" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="-1" android:layout_height="-2" android:src="@drawable/ic_speaker" android:contentDescription="@string/voip_call_speakerphone_toggle_description" />
+                <View android:id="@id/speaker_btn_on" android:background="#b238caff" android:visibility="1" android:layout_width="-2" android:layout_height="10dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:id="@id/bluetooth_btn_layout" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                <ImageButton android:id="@id/bluetooth_btn" android:background="#111" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="-1" android:layout_height="-2" android:src="@drawable/ic_bluetooth" android:contentDescription="@string/voip_call_bluetooth_toggle_description" />
+                <View android:id="@id/bluetooth_btn_on" android:background="#b238caff" android:visibility="1" android:layout_width="-2" android:layout_height="10dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                <ImageButton android:id="@id/chat_btn" android:background="#111" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="-1" android:layout_height="-2" android:src="@drawable/ic_chat" android:contentDescription="@string/voip_call_goto_chat_description" />
+                <View android:id="@id/chat_btn_on" android:background="#b238caff" android:visibility="1" android:layout_width="-2" android:layout_height="10dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                <ImageButton android:id="@id/mute_btn" android:background="#111" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="-1" android:layout_height="-2" android:src="@drawable/ic_mute" android:contentDescription="@string/voip_call_mute_toggle_description" />
+                <View android:id="@id/mute_btn_on" android:background="#b238caff" android:visibility="1" android:layout_width="-2" android:layout_height="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/call_profile_layout" android:layout_width="-1" android:layout_height="-1" android:layout_above="@id/footer" android:layout_below="@id/name">
+        <ImageView android:id="@id/profile_picture" android:layout_width="-1" android:layout_height="-1" android:src="@drawable/ic_pic_contact_xlarge" android:scaleType="6" android:contentDescription="@string/contact_avatar_image" />
+        <View android:layout_gravity="50" android:background="@drawable/call_photo_overlay" android:layout_width="-1" android:layout_height="4dp" />
+        <TextView android:textSize="28sp" android:textColor="0x106000b" android:gravity="11" android:layout_gravity="50" android:id="@id/user_hint" android:padding="12dp" android:layout_width="-1" android:layout_height="-2" android:shadowColor="0x106000c" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:fontFamily="sans-serif-light" />
+    </FrameLayout>
+    <LinearLayout android:gravity="11" android:orientation="0" android:id="@id/call_status_bar" android:background="#cc4abc34" android:paddingLeft="16dp" android:paddingTop="7dp" android:paddingRight="16dp" android:paddingBottom="7dp" android:layout_width="-1" android:layout_height="-2" android:layout_below="@id/name" android:animateLayoutChanges="true">
+        <ImageView android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="6dp" android:src="@drawable/call_icon" android:contentDescription="@string/call_icon_content_description" />
+        <TextView android:textSize="16sp" android:textColor="#c6ffffff" android:layout_width="-2" android:layout_height="-2" android:text="@string/voip_call_label" />
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1.0" />
+        <TextView android:textSize="16sp" android:textColor="#c6ffffff" android:id="@id/call_status" android:layout_width="-2" android:layout_height="-2" />
+    </LinearLayout>
+    <LinearLayout android:textColor="@color/white" android:id="@id/call_debug_view" android:background="@color/black" android:paddingLeft="7dp" android:paddingTop="7dp" android:paddingRight="7dp" android:paddingBottom="7dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_below="@id/call_status_bar">
+        <TextView android:textSize="14sp" android:id="@id/call_debug_stats" android:layout_width="-1" android:layout_height="-2" />
+    </LinearLayout>
+</RelativeLayout>

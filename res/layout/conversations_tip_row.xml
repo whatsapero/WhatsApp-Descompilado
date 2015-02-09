@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textSize="12sp" android:textStyle="1" android:textColor="@color/conversations_text_gray" android:gravity="11" android:id="@id/conversations_row_tip_tv" android:layout_width="-1" android:layout_height="50dp" android:text="@string/delete_chat_tip" />
+</FrameLayout>

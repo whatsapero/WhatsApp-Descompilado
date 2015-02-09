@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ScrollView android:padding="8dp" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2"
+            <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+                <ImageView android:gravity="13" android:layout_gravity="13" android:id="@id/image" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:layout_margin="@dimen/imageview_padding" android:src="@drawable/avatar_contact" android:scaleType="3" />
+                <LinearLayout android:gravity="10" android:orientation="1" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/shared_contact_title_text_size" android:textColor="@color/description_gray" android:ellipsize="3" android:gravity="10" android:layout_gravity="13" android:id="@id/name" android:layout_width="-2" android:layout_height="-2" android:text="First Lastname" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/shared_contact_content_text_size" android:textColor="@color/description_gray" android:ellipsize="3" android:gravity="10" android:layout_gravity="13" android:id="@id/description" android:layout_width="-2" android:layout_height="-2" android:text="Description" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/divider_row_lower" android:layout_width="-1" android:layout_height="0,5dp" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="1" android:id="@id/contact_info_ll" android:paddingBottom="4dp" android:layout_width="-1" android:layout_height="-1" /> />
+    </ScrollView>
+    <FrameLayout android:gravity="11" android:id="@id/footer_view" android:background="0x106000b" android:padding="8dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+        <Button android:layout_gravity="11" android:id="@id/add_contact_btn" android:layout_width="-1" android:layout_height="-2" android:src="0x1080033" android:text="@string/add_contact" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/footer_send" android:background="0x106000b" android:layout_width="-1" android:layout_height="-2">
+        <include layout="@layout/ok_cancel" />
+    </FrameLayout>
+</LinearLayout>

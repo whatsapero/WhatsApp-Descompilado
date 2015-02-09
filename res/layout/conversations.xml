@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@id/chats_layout" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:gravity="1" android:orientation="1" android:id="@id/conversations_search_empty" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="11" android:id="@id/search_no_matches" android:padding="12dp" android:layout_width="-1" android:layout_height="-2" android:minHeight="67dp" android:text="@string/search_no_chats" />
+        <Button android:id="@id/search_in_contacts" android:layout_width="-2" android:layout_height="-2" android:text="@string/search_in_contacts" />
+    </LinearLayout>
+    <ListView android:id="0x102000a" android:layout_width="-1" android:layout_height="-1" android:textFilterEnabled="true" android:cacheColorHint="0x106000d" android:divider="@drawable/divider_gray" android:dividerHeight="0,5dp" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+    <FrameLayout android:gravity="11" android:id="@id/conversations_empty" android:background="#fafafa" android:layout_width="-1" android:layout_height="-1">
+        <LinearLayout android:layout_gravity="11" android:orientation="1" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="-1" android:layout_height="-2">
+            <ImageView android:layout_gravity="11" android:paddingTop="32dp" android:layout_width="-2" android:layout_height="0dp" android:src="@drawable/icon_new_chat_big" android:layout_weight="1.0" />
+            <TextView android:textSize="17sp" android:textColor="#565656" android:gravity="11" android:paddingTop="48dp" android:paddingBottom="48dp" android:layout_width="-1" android:layout_height="-2" android:text="@string/welcome_chats_message" style="@style/Text" />
+        </LinearLayout>
+    </FrameLayout>
+    <include android:id="@id/conversations_empty_no_contacts" layout="@layout/empty_tell_a_friend" />
+</LinearLayout>

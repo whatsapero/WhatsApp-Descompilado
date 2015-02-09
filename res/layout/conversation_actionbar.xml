@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:enabled="false" android:orientation="0" android:id="@id/back" android:padding="0dp" android:layout_width="-2" android:layout_height="-1" android:layout_alignParentLeft="true" style="@style/ActionBarButtonStyle">
+        <ImageView android:layout_gravity="13" android:id="@id/abs__up" android:layout_width="-2" android:layout_height="-2" android:src="?attr/homeAsUpIndicator" />
+        <FrameLayout android:layout_gravity="13" android:id="@id/conversation_contact_photo_frame" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="4dp">
+            <ImageView android:id="@id/conversation_contact_photo" android:layout_width="35dp" android:layout_height="35dp" android:scaleType="3" android:adjustViewBounds="true" />
+            <ProgressBar android:layout_gravity="11" android:id="@id/change_photo_progress" android:visibility="2" android:layout_width="35dp" android:layout_height="35dp" style="?unknown_attr_ref: 1010288" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="1" android:id="@id/conversation_contact" android:paddingLeft="4dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:clickable="true" android:layout_width="-1" android:layout_height="-2" android:layout_toRightOf="@id/back" android:layout_centerVertical="true" android:animateLayoutChanges="true" style="@style/ActionBarButtonStyle">
+        <com.whatsapp.TextEmojiLabel android:ellipsize="3" android:gravity="3" android:layout_gravity="3" android:id="@id/conversation_contact_name" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" style="@style/Theme.ActionBar.TitleTextStyle" />
+        <TextView android:ellipsize="4" android:layout_gravity="3" android:id="@id/conversation_contact_status" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="@dimen/abs__action_bar_subtitle_top_margin" android:layout_marginBottom="@dimen/abs__action_bar_subtitle_bottom_margin" android:lines="1" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/Theme.ActionBar.SubtitleTextStyle" />
+    </LinearLayout>
+</RelativeLayout>

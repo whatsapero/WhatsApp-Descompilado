@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView android:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout android:gravity="13" android:orientation="1" android:id="@id/text_layout" android:paddingLeft="2dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="@dimen/conversation_row_margin" android:layout_marginRight="40dp" android:minHeight="30dp" android:layout_below="@id/date_divider" android:layout_alignParentLeft="true"
+        <LinearLayout android:layout_gravity="33" android:id="@id/name_in_group" android:paddingLeft="4dp" android:paddingTop="1dp" android:paddingRight="6dp" android:paddingBottom="1dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2">
+            <TextView android:textSize="@dimen/conversation_participant_name_tv" android:textColor="#000" android:id="@id/name_in_group_tv" android:paddingRight="4sp" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:singleLine="true" />
+            <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_participant_name_tv" android:textColor="#999999" android:id="@id/pushname_in_group_tv" android:paddingLeft="4sp" android:paddingRight="4sp" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="3" android:orientation="0" android:id="@id/text_content_layout" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2">
+            <RelativeLayout android:paddingLeft="4dp" android:paddingBottom="1dp" android:layout_width="-2" android:layout_height="-2" android:layout_weight="1.0">
+                <ImageView android:id="@id/message_image" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="2dp" android:scaleType="3" />
+                <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_text_row_tv" android:textColor="#000" android:id="@id/message_text" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2" android:drawablePadding="8dp" android:layout_toRightOf="@id/message_image" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="53" android:orientation="0" android:id="@id/date_wrapper" android:layout_width="-2" android:layout_height="-2">
+                <TextView android:layout_gravity="53" android:id="@id/date" android:paddingBottom="0dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" style="@style/ConversationDate" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

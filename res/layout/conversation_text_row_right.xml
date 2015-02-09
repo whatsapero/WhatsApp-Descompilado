@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView android:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout android:gravity="15" android:orientation="0" android:id="@id/text_layout" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="40dp" android:layout_marginRight="@dimen/conversation_row_margin" android:minHeight="30dp" android:layout_below="@id/date_divider" android:layout_alignParentRight="true"
+        <LinearLayout android:orientation="0" android:id="@id/text_content_layout" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2">
+            <RelativeLayout android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingBottom="1dp" android:layout_width="-2" android:layout_height="-2" android:layout_weight="1.0">
+                <ImageView android:id="@id/message_image" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="2dp" android:scaleType="3" />
+                <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_text_row_tv" android:textColor="#000" android:gravity="10" android:id="@id/message_text" android:paddingLeft="4dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2" android:layout_toRightOf="@id/message_image" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="55" android:orientation="0" android:id="@id/date_wrapper" android:layout_width="-2" android:layout_height="-2">
+                <TextView android:gravity="5" android:layout_gravity="55" android:id="@id/date" android:paddingLeft="4dp" android:paddingRight="2dp" android:layout_width="-2" android:layout_height="-2" style="@style/ConversationDate" />
+                <ImageView android:layout_gravity="55" android:id="@id/status" android:paddingRight="4dp" android:paddingBottom="3dp" android:layout_width="-2" android:layout_height="-2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

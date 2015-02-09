@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView whatsapp:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout whatsapp:orientation="1" whatsapp:layout_width="-2" whatsapp:layout_height="@dimen/media_message_thumb" whatsapp:layout_marginLeft="9dp" whatsapp:layout_marginRight="@dimen/conversation_left_row_margin_right" whatsapp:layout_below="@id/date_divider" whatsapp:layout_alignParentLeft="true"
+        <LinearLayout whatsapp:gravity="50" whatsapp:layout_gravity="13" whatsapp:orientation="0" whatsapp:layout_width="-2" whatsapp:layout_height="-2"
+            <LinearLayout whatsapp:gravity="5" whatsapp:orientation="1" whatsapp:layout_width="@dimen/conversation_control_button_width" whatsapp:layout_height="@dimen/media_message_thumb"
+                <LinearLayout whatsapp:layout_gravity="3" whatsapp:orientation="0" whatsapp:id="@id/name_in_group" whatsapp:visibility="2" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_marginLeft="8,5dp" whatsapp:layout_marginTop="4dp" whatsapp:layout_marginRight="8,5dp">
+                    <TextView whatsapp:textSize="@dimen/conversation_participant_name_tv" whatsapp:textColor="#000" whatsapp:id="@id/name_in_group_tv" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:lines="1" whatsapp:singleLine="true" />
+                    <com.whatsapp.TextEmojiLabel whatsapp:textSize="@dimen/conversation_participant_name_tv" whatsapp:textColor="#999999" whatsapp:id="@id/pushname_in_group_tv" whatsapp:paddingLeft="12sp" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:lines="1" whatsapp:singleLine="true" />
+                </LinearLayout>
+                <View whatsapp:layout_width="-2" whatsapp:layout_height="0dp" whatsapp:layout_weight="1.0" />
+                <TextView whatsapp:layout_gravity="5" whatsapp:id="@id/date" whatsapp:paddingRight="8dp" whatsapp:paddingBottom="6dp" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_marginLeft="3dp" whatsapp:text="12:04" style="@style/ConversationDate" />
+                <com.whatsapp.TextEmojiLabel whatsapp:textSize="13,5sp" whatsapp:ellipsize="3" whatsapp:id="@id/vcard_btn" whatsapp:maxLines="2" whatsapp:textAllCaps="false" style="@style/ConversationControlButtonIncoming" />
+            </LinearLayout>
+            <FrameLayout whatsapp:layout_width="-2" whatsapp:layout_height="-2">
+                <ImageView whatsapp:id="@id/thumb" whatsapp:background="#00000000" whatsapp:layout_width="@dimen/media_message_thumb" whatsapp:layout_height="@dimen/media_message_thumb" whatsapp:scaleType="6" />
+                <com.whatsapp.ThumbnailButton whatsapp:layout_gravity="11" whatsapp:id="@id/picture" whatsapp:layout_width="@dimen/contact_message_picture" whatsapp:layout_height="@dimen/contact_message_picture" whatsapp:scaleType="6" whatsapp:tbtnRadius="2dp" />
+                <Button whatsapp:id="@id/thumb_button" whatsapp:background="@drawable/media_overlay_incoming" whatsapp:layout_width="@dimen/media_message_thumb" whatsapp:layout_height="@dimen/media_message_thumb" whatsapp:scaleType="3" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

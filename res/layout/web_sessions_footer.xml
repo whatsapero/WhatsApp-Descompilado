@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:id="@id/footer" android:background="@drawable/panel_bot" android:layout_width="-1" android:layout_height="-1">
+        <LinearLayout android:gravity="10" android:orientation="0" android:id="@id/logout_all" android:background="@drawable/selector_orange_gradient" android:paddingLeft="@dimen/list_row_padding" android:paddingRight="@dimen/list_row_padding" android:layout_width="-1" android:layout_height="@dimen/group_participant_row_height">
+            <ImageView android:layout_width="@dimen/thumbnail_size" android:layout_height="@dimen/thumbnail_size" android:layout_marginTop="@dimen/thumbnail_padding" android:layout_marginRight="@dimen/thumbnail_padding_right" android:layout_marginBottom="@dimen/thumbnail_padding" android:src="@drawable/active_connections_logout" android:scaleType="5" />
+            <TextView android:textColor="#03a9f4" android:gravity="13" android:layout_width="0dp" android:layout_height="@dimen/group_participant_row_height" android:text="@string/delete_all_qr" android:layout_weight="1.0" style="@style/ListItemTitle" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="16sp" android:textColor="#a8a8a8" android:gravity="11" android:id="@id/hint" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="8dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2" />
+</LinearLayout>

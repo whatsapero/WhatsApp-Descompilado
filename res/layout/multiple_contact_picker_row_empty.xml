@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/empty_row_unclickable" android:layout_width="-1" android:layout_height="67dp">
+    <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="11" android:id="@id/tv" android:layout_width="-1" android:layout_height="-1" android:text="@string/search_no_matches" />
+</RelativeLayout>

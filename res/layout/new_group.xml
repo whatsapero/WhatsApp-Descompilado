@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout whatsapp:orientation="1" whatsapp:layout_width="-1" whatsapp:layout_height="-1">
+    <ScrollView whatsapp:layout_width="-1" whatsapp:layout_height="-1">
+        <LinearLayout whatsapp:orientation="1" whatsapp:layout_width="-1" whatsapp:layout_height="-1">
+            <RelativeLayout whatsapp:orientation="0" whatsapp:paddingLeft="16dp" whatsapp:paddingTop="16dp" whatsapp:paddingRight="16dp" whatsapp:layout_width="-1" whatsapp:layout_height="-1">
+                <FrameLayout whatsapp:gravity="11" whatsapp:id="@id/image_frame_layout" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_alignParentLeft="true">
+                    <com.whatsapp.ThumbnailPickerButton whatsapp:id="@id/change_photo_btn" whatsapp:layout_width="@dimen/registration_profile_photo_size" whatsapp:layout_height="@dimen/registration_profile_photo_size" whatsapp:src="@drawable/avatar_group" whatsapp:scaleType="3" whatsapp:contentDescription="@string/group_photo" whatsapp:tbtnRadius="@dimen/registration_profile_photo_radius" />
+                    <ProgressBar whatsapp:layout_gravity="11" whatsapp:id="@id/change_photo_progress" whatsapp:visibility="2" whatsapp:layout_width="-2" whatsapp:layout_height="-2" style="?unknown_attr_ref: 1010288" />
+                </FrameLayout>
+                <TextView whatsapp:gravity="3" whatsapp:paddingLeft="16dp" whatsapp:layout_width="-2" whatsapp:text="@string/new_group_info_prompt" whatsapp:layout_toRightOf="@id/image_frame_layout" style="@style/Text.Description" />
+            </RelativeLayout>
+            <RelativeLayout whatsapp:paddingLeft="16dp" whatsapp:paddingRight="2dp" whatsapp:layout_width="-1" whatsapp:layout_height="-2" whatsapp:layout_marginTop="16dp"
+                <RelativeLayout whatsapp:layout_width="-1" whatsapp:layout_height="-2" whatsapp:layout_toLeftOf="@id/emoji_btn" whatsapp:layout_centerVertical="true">
+                    <EditText whatsapp:textColor="#000000" whatsapp:textColorHint="#888888" whatsapp:ellipsize="3" whatsapp:id="@id/group_name" whatsapp:paddingRight="32sp" whatsapp:layout_width="-1" whatsapp:layout_height="-2" whatsapp:hint="@string/group_name_hint" whatsapp:maxLines="1" whatsapp:lines="1" whatsapp:singleLine="true" whatsapp:imeOptions="6" />
+                    <TextView whatsapp:textSize="14sp" whatsapp:textColor="#cacaca" whatsapp:id="@id/subject_counter_tv" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_marginRight="10dp" whatsapp:layout_alignParentRight="true" whatsapp:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageButton whatsapp:id="@id/emoji_btn" whatsapp:layout_width="48dp" whatsapp:layout_height="48dp" whatsapp:src="@drawable/emoji_btn" whatsapp:layout_alignParentRight="true" whatsapp:layout_centerVertical="true" style="@style/ActionBarButtonStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

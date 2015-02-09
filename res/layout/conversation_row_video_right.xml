@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView android:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="40dp" android:layout_marginRight="9dp" android:layout_below="@id/date_divider" android:layout_alignParentRight="true">
+        <FrameLayout android:padding="@dimen/conversation_video_thumb_padding" android:layout_width="-2" android:layout_height="-2">
+            <view android:id="@id/thumb" android:background="#ff000000" android:layout_width="-1" android:layout_height="-1" android:scaleType="6" class="com.whatsapp.ConversationRowVideo$RowVideoView" />
+            <TextView android:textSize="12,5sp" android:textStyle="1" android:textColor="0x106000b" android:layout_gravity="53" android:id="@id/info" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:singleLine="true" android:drawablePadding="4dp" />
+            <LinearLayout android:gravity="10" android:layout_gravity="55" android:orientation="0" android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingBottom="2dp" android:layout_width="-2" android:layout_height="-2">
+                <TextView android:textColor="@color/conversation_row_image_text" android:layout_gravity="15" android:id="@id/date" android:layout_width="-2" android:layout_height="-2" style="@style/ConversationDate" />
+                <ImageView android:layout_gravity="10" android:id="@id/status" android:layout_width="-2" android:layout_height="-2" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="11" android:id="@id/control_frame" android:background="@drawable/download_background" android:layout_width="-2" android:layout_height="-2" android:animateLayoutChanges="true">
+                <com.whatsapp.CircularProgressBar android:layout_gravity="11" android:id="@id/progress_bar" android:visibility="2" android:layout_width="64dp" android:layout_height="64dp" android:indeterminateOnly="false" />
+                <ImageView android:layout_gravity="11" android:id="@id/cancel_download" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/btn_cancel" />
+                <Button android:textColor="@color/conversation_row_image_text" android:layout_gravity="11" android:id="@id/control_btn" android:background="@pbe/MD5" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="-2" android:layout_height="-2" android:drawableLeft="@drawable/btn_upload" android:drawablePadding="8dp" />
+            </FrameLayout>
+        </FrameLayout>
+        <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_text_row_tv" android:textColor="#dd000000" android:id="@id/caption" android:paddingLeft="@dimen/conversation_video_thumb_padding" android:paddingRight="@dimen/conversation_video_thumb_padding" android:paddingBottom="@dimen/conversation_video_thumb_padding" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="-2dp" />
+    </LinearLayout>
+</merge>

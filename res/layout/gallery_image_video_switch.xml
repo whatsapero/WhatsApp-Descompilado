@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="-1">
+    <View android:background="?attr/actionBarDivider" android:layout_width="1dp" android:layout_height="-1" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+    <FrameLayout android:id="@id/images" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" style="@style/ActionBarButtonStyle">
+        <TextView android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:text="@string/tab_images" style="@style/ActionBarTabTextStyle" />
+        <View android:layout_gravity="50" android:id="@id/images_indicator" android:background="@drawable/tab_indicator" android:layout_width="-1" android:layout_height="4dp" />
+    </FrameLayout>
+    <View android:background="?attr/actionBarDivider" android:layout_width="1dp" android:layout_height="-1" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+    <FrameLayout android:id="@id/videos" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="1.0" style="@style/ActionBarButtonStyle">
+        <TextView android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:text="@string/tab_video" style="@style/ActionBarTabTextStyle" />
+        <View android:layout_gravity="50" android:id="@id/videos_indicator" android:background="@drawable/tab_indicator" android:layout_width="-1" android:layout_height="4dp" />
+    </FrameLayout>
+    <View android:background="?attr/actionBarDivider" android:layout_width="1dp" android:layout_height="-1" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout whatsapp:layout_width="-1" whatsapp:layout_height="-1"
+    <RelativeLayout whatsapp:id="@id/call_notification" whatsapp:background="@drawable/call_duration_bar_background" whatsapp:paddingLeft="16dp" whatsapp:paddingTop="8dp" whatsapp:paddingRight="16dp" whatsapp:paddingBottom="8dp" whatsapp:layout_width="-1" whatsapp:layout_height="-2">
+        <TextView whatsapp:textSize="17sp" whatsapp:textColor="0x106000b" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:text="@string/tap_to_return_to_call" whatsapp:layout_toLeftOf="@id/call_notification_timer" whatsapp:layout_alignParentLeft="true" />
+        <TextView whatsapp:textSize="16sp" whatsapp:textColor="0x106000b" whatsapp:gravity="10" whatsapp:id="@id/call_notification_timer" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_alignParentRight="true" whatsapp:textAllCaps="true" />
+    </RelativeLayout>
+    <com.whatsapp.PagerSlidingTabStrip whatsapp:id="@id/tabs" whatsapp:background="#ffeeeeee" whatsapp:layout_width="-1" whatsapp:layout_height="48dp" whatsapp:layout_below="@id/call_notification" whatsapp:pstsIndicatorColor="@color/tab_indicator" whatsapp:pstsIndicatorHeight="5dp" whatsapp:pstsUnderlineHeight="0,5dp" whatsapp:pstsTabPaddingLeftRight="12dp" whatsapp:pstsShouldExpand="true" />
+    <view whatsapp:id="@id/pager" whatsapp:layout_width="-1" whatsapp:layout_height="-1" whatsapp:layout_below="@id/tabs" class="com.whatsapp.HomeActivity$TabsPager" />
+</RelativeLayout>

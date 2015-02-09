@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/about_layout" android:background="@drawable/background" android:layout_width="-1" android:layout_height="-1">
+    <View android:id="@id/top_empty" android:layout_width="-1" android:layout_height="1px" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="11" android:orientation="1" android:id="@id/business_card" android:layout_width="-1" android:layout_height="-2" android:layout_weight="1.0" android:layout_above="@id/bottom_empty" android:layout_below="@id/top_empty"
+        <LinearLayout android:gravity="11" android:layout_gravity="1" android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+            <ImageView android:layout_gravity="10" android:id="@id/logo" android:padding="16dp" android:layout_width="-2" android:layout_height="-1" android:layout_marginTop="8dp" android:src="@drawable/about_logo" />
+            <LinearLayout android:layout_gravity="1" android:orientation="1" android:paddingRight="16dp" android:layout_width="-2" android:layout_height="-2">
+                <TextView android:textSize="20sp" android:textStyle="0" android:textColor="@color/white" android:id="@id/eula_title" android:paddingTop="7dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="7dp" android:text="@string/title" />
+                <TextView android:textSize="16sp" android:textColor="#86a9a8" android:id="@id/version" android:paddingTop="2dp" android:paddingBottom="6dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="8dp" />
+                <TextView android:textSize="15sp" android:textColor="#86a9a8" android:paddingTop="10dp" android:paddingBottom="6dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/copyright1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/bottom_empty" android:layout_width="-1" android:layout_height="1px" android:layout_above="@id/about_bottom_bar" />
+    <LinearLayout android:orientation="1" android:id="@id/about_bottom_bar" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true"
+        <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:background="@color/full_screen_footer" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" /> />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="-1" android:layout_height="-1">
+    <LinearLayout android:gravity="11" android:orientation="0" android:layout_width="-1" android:layout_height="48dp" android:animateLayoutChanges="true">
+        <TextView android:textSize="12sp" android:textStyle="1" android:textColor="#ff264444" android:id="@id/tab" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:textAllCaps="true" />
+        <TextView android:textSize="10,5sp" android:textStyle="1" android:textColor="0x106000b" android:gravity="11" android:layout_gravity="10" android:id="@id/badge" android:background="@drawable/tab_badge_background" android:paddingLeft="6,5dp" android:paddingTop="2dp" android:paddingRight="6,5dp" android:paddingBottom="2dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="5dp" android:minWidth="16dp" />
+    </LinearLayout>
+</FrameLayout>

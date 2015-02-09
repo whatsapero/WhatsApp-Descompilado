@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <View android:background="@color/divider_gray" android:layout_width="-1" android:layout_height="1dp" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:baselineAligned="false">
+        <Button android:ellipsize="3" android:id="@id/cancel_btn" android:layout_width="0dp" android:layout_height="-2" android:text="@string/cancel" android:layout_weight="1.0" style="@style/ActionBarButtonStyle" />
+        <View android:background="@color/divider_gray" android:layout_width="1dp" android:layout_height="-1" />
+        <Button android:ellipsize="3" android:id="@id/ok_btn" android:layout_width="0dp" android:layout_height="-2" android:text="@string/ok" android:layout_weight="1.0" style="@style/ActionBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

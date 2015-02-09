@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/no_contacts_unclickable" android:layout_width="-1" android:layout_height="@dimen/conversations_row_height"
+    <RelativeLayout android:id="@id/contactpicker_row_content" android:layout_width="-1" android:layout_height="-2" android:minHeight="@dimen/conversations_row_height">
+        <TextView android:textSize="18sp" android:textStyle="1" android:textColor="@color/black" android:gravity="11" android:id="@id/tv" android:layout_width="-1" android:layout_height="-1" android:text="@string/contact_picker_no_wa_contacts" />
+    </RelativeLayout>
+</RelativeLayout>

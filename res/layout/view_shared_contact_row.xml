@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_contact_info_rl" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-1" android:layout_height="-2" android:layout_centerVertical="true">
+    <CheckBox android:id="@id/cbx" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:checked="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/shared_contact_title_text_size" android:textColor="#000" android:gravity="13" android:id="@id/view_contact_info_title_tv" android:paddingLeft="4dp" android:paddingTop="4dp" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" android:layout_toLeftOf="@id/view_contact_info_btn" android:layout_toRightOf="@id/cbx" />
+    <TextView android:textSize="@dimen/shared_contact_content_text_size" android:textColor="#000" android:gravity="13" android:id="@id/view_contact_info_body_tv" android:paddingLeft="4dp" android:paddingBottom="4dp" android:layout_width="-1" android:layout_height="-2" android:layout_toLeftOf="@id/view_contact_info_btn" android:layout_toRightOf="@id/cbx" android:layout_below="@id/view_contact_info_title_tv" />
+    <ImageView android:id="@id/view_contact_info_btn" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:background="@color/divider_row_lower" android:layout_width="-1" android:layout_height="0,5dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="-1" android:layout_height="-1">
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:id="@id/grid" android:layout_width="-1" android:layout_height="-1" android:listSelector="@drawable/grid_background" android:drawSelectorOnTop="true" android:cacheColorHint="#00000000" android:horizontalSpacing="2dp" android:verticalSpacing="2dp" android:stretchMode="2" android:columnWidth="@dimen/gallery_picker_item_thumb_size" android:numColumns="-1" />
+    <RelativeLayout android:orientation="1" android:id="@id/no_images" android:visibility="2" android:layout_width="-1" android:layout_height="-1" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="11" android:id="@id/no_pictures_image" android:background="@drawable/ic_gallery_empty2" android:layout_width="-2" android:layout_height="-2" android:layout_centerInParent="true" />
+        <TextView android:textSize="18dp" android:textColor="#ffbebebe" android:layout_gravity="11" android:paddingTop="5dp" android:layout_width="-2" android:layout_height="-2" android:text="@string/image_gallery_NoImageView_text" android:layout_below="@id/no_pictures_image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

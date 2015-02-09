@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:padding="@dimen/picker_row_padding" android:layout_width="-1" android:layout_height="-2"
+    <LinearLayout android:gravity="3" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+        <TextView android:textSize="18sp" android:textStyle="1" android:textColor="#000000" android:gravity="3" android:id="@id/country_name" android:layout_width="-2" android:layout_height="-2" />
+        <TextView android:textSize="12sp" android:textColor="#323232" android:gravity="3" android:id="@id/country_en_name" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="2dp" />
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:textStyle="1" android:textColor="@color/conversations_text_gray" android:gravity="15" android:layout_gravity="15" android:id="@id/country_code" android:layout_width="-2" android:layout_height="-1" android:layout_marginLeft="4dp" android:layout_marginRight="5dp" />
+    <LinearLayout android:layout_gravity="15" android:paddingLeft="4dp" android:layout_width="20dp" android:layout_height="-1">
+        <ImageView android:gravity="15" android:layout_gravity="15" android:id="@id/countrypicker_checkmark" android:layout_width="-2" android:layout_height="-2" />
+    </LinearLayout>
+</LinearLayout>

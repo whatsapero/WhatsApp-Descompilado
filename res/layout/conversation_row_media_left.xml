@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView android:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="9dp" android:layout_marginRight="40dp" android:layout_below="@id/date_divider" android:layout_alignParentLeft="true"
+        <LinearLayout android:gravity="50" android:layout_gravity="13" android:orientation="0" android:layout_width="-2" android:layout_height="@dimen/media_message_thumb"
+            <LinearLayout android:gravity="5" android:orientation="1" android:layout_width="@dimen/conversation_control_button_width" android:layout_height="@dimen/media_message_thumb"
+                <LinearLayout android:layout_gravity="3" android:orientation="0" android:id="@id/name_in_group" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="8,5dp" android:layout_marginTop="4dp" android:layout_marginRight="8,5dp">
+                    <TextView android:textSize="@dimen/conversation_participant_name_tv" android:textColor="#000" android:id="@id/name_in_group_tv" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:singleLine="true" />
+                    <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_participant_name_tv" android:textColor="#999999" android:id="@id/pushname_in_group_tv" android:paddingLeft="12sp" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:singleLine="true" />
+                </LinearLayout>
+                <View android:layout_width="@dimen/conversation_control_button_width" android:layout_height="0dp" android:layout_weight="1.0" />
+                <TextView android:layout_gravity="5" android:id="@id/date" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="3dp" style="@style/ConversationDate" />
+                <Button android:id="@id/control_btn" android:layout_width="-1" style="@style/ConversationControlButtonIncoming" />
+                <ProgressBar android:id="@id/progress_bar" android:visibility="2" style="@style/ConversationProgressBar" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/thumb_frame" android:layout_width="@dimen/media_message_thumb" android:layout_height="@dimen/media_message_thumb">
+                <ImageView android:id="@id/thumb" android:layout_width="@dimen/media_message_thumb" android:layout_height="@dimen/media_message_thumb" android:scaleType="6" />
+                <ImageView android:id="@id/video_overlay" android:background="@drawable/video_overlay_incoming" android:visibility="2" android:layout_width="@dimen/media_message_thumb" android:layout_height="@dimen/media_message_thumb" android:scaleType="3" />
+                <TextView android:textSize="12,5sp" android:textStyle="1" android:textColor="0x106000b" android:layout_gravity="50" android:id="@id/title" android:paddingLeft="6dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="2" android:layout_width="@dimen/media_message_thumb" android:layout_height="-2" android:lines="1" android:singleLine="true" android:drawablePadding="4dp" />
+                <Button android:id="@id/thumb_button" android:background="@drawable/media_overlay_incoming" android:layout_width="@dimen/media_message_thumb" android:layout_height="@dimen/media_message_thumb" android:scaleType="3" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

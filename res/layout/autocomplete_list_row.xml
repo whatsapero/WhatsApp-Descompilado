@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="9dp" android:paddingTop="8dp" android:paddingRight="9dp" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-2">
+    <ImageView android:id="@id/contactpicker_row_photo" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="0dp" android:layout_marginRight="9dp" android:scaleType="3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="0" android:id="@id/contact_name_type" android:layout_width="-1" android:layout_height="-2" android:layout_toRightOf="@id/contactpicker_row_photo">
+        <FrameLayout android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+            <TextView android:textSize="19sp" android:textColor="@color/list_item_title" android:ellipsize="3" android:layout_gravity="3" android:id="@id/contact_name" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+        </FrameLayout>
+        <TextView android:textSize="13,5sp" android:textColor="@color/contact_phone_type" android:gravity="13" android:id="@id/contacts_phone_type" android:layout_width="-2" android:layout_height="-2" android:maxWidth="@dimen/contact_picker_type_max_width" android:singleLine="true" />
+    </LinearLayout>
+    <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:textColor="@color/contact_phone_type" android:ellipsize="3" android:id="@id/contact_status" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:layout_toRightOf="@id/contactpicker_row_photo" android:layout_below="@id/contact_name_type" />
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:drawable="@drawable/abs__ic_menu_moreoverflow_normal_holo_light" />
+</selector>

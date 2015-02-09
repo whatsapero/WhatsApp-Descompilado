@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="-1" android:layout_height="-2">
+    <LinearLayout android:gravity="50" android:layout_gravity="50" android:orientation="0" android:background="#66000000" android:layout_width="-1" android:layout_height="-2" android:minHeight="48dp"
+        <LinearLayout android:layout_gravity="50" android:orientation="1" android:id="@id/emoji_btn_holder" android:visibility="2" android:layout_width="-2" android:layout_height="-2">
+            <TextView android:textColor="#99ffffff" android:layout_gravity="1" android:id="@id/counter" android:visibility="2" android:layout_width="-2" android:layout_height="-2" />
+            <ImageButton android:layout_gravity="50" android:id="@id/emoji_picker_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/emoji_btn_white" style="@style/ActionBarButtonStyle" />
+        </LinearLayout>
+        <com.whatsapp.ConversationTextEntry android:scrollbarStyle="2000000" android:textColor="0x106000b" android:textColorHint="#66ffffff" android:layout_gravity="10" android:id="@id/caption" android:background="@drawable/textfield_image_caption" android:scrollbars="200" android:layout_width="-1" android:layout_height="-2" android:hint="@string/add_caption" android:maxLines="6" android:inputType="24001" android:imeOptions="6" />
+    </LinearLayout>
+</merge>

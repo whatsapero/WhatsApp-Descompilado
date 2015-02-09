@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView whatsapp:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout whatsapp:gravity="50" whatsapp:orientation="0" whatsapp:layout_width="-2" whatsapp:layout_height="@dimen/media_message_thumb" whatsapp:layout_marginRight="9dp" whatsapp:layout_below="@id/date_divider" whatsapp:layout_alignParentRight="true">
+        <FrameLayout whatsapp:layout_width="-2" whatsapp:layout_height="-2">
+            <ImageView whatsapp:id="@id/thumb" whatsapp:background="#00000000" whatsapp:layout_width="@dimen/media_message_thumb" whatsapp:layout_height="@dimen/media_message_thumb" whatsapp:scaleType="6" />
+            <com.whatsapp.ThumbnailButton whatsapp:layout_gravity="11" whatsapp:id="@id/picture" whatsapp:layout_width="@dimen/contact_message_picture" whatsapp:layout_height="@dimen/contact_message_picture" whatsapp:scaleType="6" whatsapp:tbtnRadius="2dp" />
+            <Button whatsapp:id="@id/thumb_button" whatsapp:background="@drawable/media_overlay_outgoing" whatsapp:layout_width="@dimen/media_message_thumb" whatsapp:layout_height="@dimen/media_message_thumb" whatsapp:scaleType="3" />
+        </FrameLayout>
+        <LinearLayout whatsapp:gravity="55" whatsapp:orientation="1" whatsapp:id="@id/button_frame" whatsapp:paddingTop="8dp" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_centerVertical="true"
+            <LinearLayout whatsapp:gravity="10" whatsapp:layout_gravity="5" whatsapp:orientation="0" whatsapp:id="@id/conversation_layout_gravity_right_ar" whatsapp:padding="8dp" whatsapp:layout_width="-2" whatsapp:layout_height="-2">
+                <TextView whatsapp:layout_gravity="5" whatsapp:id="@id/date" whatsapp:layout_width="-2" whatsapp:layout_height="-2" style="@style/ConversationDate" />
+                <ImageView whatsapp:id="@id/status" whatsapp:paddingLeft="2dp" whatsapp:layout_width="-2" whatsapp:layout_height="-2" />
+            </LinearLayout>
+            <com.whatsapp.TextEmojiLabel whatsapp:textSize="13,5sp" whatsapp:ellipsize="1" whatsapp:id="@id/vcard_btn" whatsapp:maxLines="2" whatsapp:textAllCaps="false" style="@style/ConversationControlButtonIncoming" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

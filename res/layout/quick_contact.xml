@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:id="@id/floating_layout" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="1" android:layout_width="-1" android:layout_height="-1" class="com.whatsapp.util.FloatingChildLayout">
+    <FrameLayout android:layout_gravity="10" android:id="0x1020002" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="-2" android:layout_height="-2">
+        <LinearLayout android:orientation="1" android:background="#ffffffff" android:layout_width="-2" android:layout_height="-2">
+            <FrameLayout android:layout_width="-2" android:layout_height="0dp" android:layout_weight="1.0">
+                <ImageView android:id="@id/picture" android:layout_width="@dimen/quick_contact_profile_photo_size" android:layout_height="@dimen/quick_contact_profile_photo_size" android:src="@drawable/ic_pic_contact_xlarge" android:scaleType="6" android:contentDescription="@string/profile_photo" />
+                <com.whatsapp.TextEmojiLabel android:textSize="18dp" android:textColor="0x106000b" android:ellipsize="3" android:id="@id/name" android:background="#33000000" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="@dimen/quick_contact_profile_photo_size" android:layout_height="-2" android:singleLine="true" />
+            </FrameLayout>
+            <View android:background="@color/divider_gray" android:layout_width="-1" android:layout_height="1dp" />
+            <TextView android:textColor="#707070" android:gravity="11" android:id="@id/invite_btn" android:layout_width="-1" android:layout_height="48dp" android:text="@string/invite" android:textAllCaps="true" style="@style/ActionBarButtonStyle" />
+            <LinearLayout android:gravity="10" android:orientation="0" android:id="@id/buttons" android:layout_width="-1" android:layout_height="-2">
+                <ImageButton android:ellipsize="3" android:id="@id/message_btn" android:layout_width="0dp" android:layout_height="-2" android:src="@drawable/ic_action_message_dark" android:layout_weight="0.5" android:contentDescription="@string/message_contact" style="@style/ActionBarButtonStyle" />
+                <View android:id="@id/call_btn_separator" android:background="@color/divider_gray" android:layout_width="1dp" android:layout_height="24dp" />
+                <ImageButton android:ellipsize="3" android:id="@id/call_btn" android:layout_width="0dp" android:layout_height="-2" android:src="@drawable/ic_action_call_dark" android:layout_weight="0.5" android:contentDescription="@string/call" style="@style/ActionBarButtonStyle" />
+                <View android:background="@color/divider_gray" android:layout_width="1dp" android:layout_height="24dp" />
+                <ImageButton android:ellipsize="3" android:id="@id/info_btn" android:layout_width="0dp" android:layout_height="-2" android:src="@drawable/ic_action_info_dark" android:layout_weight="0.5" android:contentDescription="@string/call" style="@style/ActionBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</view>

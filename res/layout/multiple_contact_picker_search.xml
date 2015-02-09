@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="10" android:paddingLeft="@dimen/list_row_padding" android:paddingTop="6dp" android:paddingRight="@dimen/list_row_padding" android:layout_width="-1" android:layout_height="-2"
+    <RelativeLayout android:id="@id/search_view" android:layout_width="-1" android:layout_height="-2">
+        <EditText android:id="@id/search_et" android:background="@drawable/search_input" android:paddingLeft="37dp" android:paddingRight="37dp" android:layout_width="-1" android:layout_height="-2" android:hint="@string/search_hint" android:scrollHorizontally="true" android:singleLine="true" android:autoText="false" android:layout_centerInParent="true" android:inputType="61" />
+        <ImageView android:id="@id/icon" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="9dp" android:src="@drawable/search_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/clear_search_btn" android:background="@drawable/selector_orange_gradient" android:paddingTop="2dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="2dp" android:src="@drawable/clear_search_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

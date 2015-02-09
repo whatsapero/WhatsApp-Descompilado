@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/all_media_divider" android:layout_width="-1" android:layout_height="-2">
+    <TextView android:textSize="14sp" android:textStyle="1" android:textColor="#aaffffff" android:layout_gravity="10" android:id="@id/media_section" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:textAllCaps="true" />
+</FrameLayout>

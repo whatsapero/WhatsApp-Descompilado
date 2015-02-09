@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:id="0x102000a" android:layout_width="-1" android:layout_height="-1" android:cacheColorHint="0x106000d" android:divider="@drawable/divider_gray" android:dividerHeight="0,5dp" android:choiceMode="0" />
+    <ScrollView android:id="@id/block_list_empty" android:background="@color/gray_activity" android:layout_width="-1" android:layout_height="-1">
+        <FrameLayout android:padding="8dp" android:layout_width="-1" android:layout_height="-1">
+            <LinearLayout android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-1">
+                <ImageView android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="20dp" android:src="@drawable/blocked_contacts_empty" />
+                <TextView android:textSize="16sp" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-2" android:text="@string/block_list_desc_1" style="@style/Text" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

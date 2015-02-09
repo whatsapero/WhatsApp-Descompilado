@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:id="@id/wallpaper" android:layout_width="-1" android:layout_height="0dp" android:scaleType="3" android:layout_weight="1.0" />
+    <com.whatsapp.CustomVelocityGallery android:id="@id/gallery" android:layout_width="-1" android:layout_height="-2" />
+    <Button android:layout_gravity="1" android:id="@id/set_wallpaper" android:layout_width="-2" android:layout_height="-2" android:text="@string/set_wallpaper" />
+</LinearLayout>

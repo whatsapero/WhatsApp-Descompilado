@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="0" android:id="@id/abs__search_bar" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:layout_gravity="10" android:orientation="0" android:id="@id/abs__search_edit_frame" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="4dp" android:layout_weight="1.0"
+        <LinearLayout android:layout_gravity="10" android:orientation="0" android:id="@id/abs__search_plate" android:background="@drawable/abs__textfield_search_selected_holo_dark" android:layout_width="-2" android:layout_height="-2" android:layout_weight="1.0">
+            <EditText android:ellipsize="3" android:layout_gravity="50" android:id="@id/abs__search_src_text" android:background="@pbe/MD5" android:paddingLeft="@dimen/abs__dropdownitem_text_padding_left" android:paddingRight="@dimen/abs__dropdownitem_text_padding_right" android:layout_width="0dp" android:layout_height="36dp" android:minWidth="@dimen/abs__search_view_text_min_width" android:singleLine="true" android:layout_weight="1.0" android:inputType="90001" android:imeOptions="3" android:contentDescription="@string/abs__searchview_description_query" style="?attr/searchAutoCompleteTextView" />
+            <ImageView android:layout_gravity="10" android:id="@id/abs__search_close_btn" android:paddingLeft="8dp" android:paddingRight="8dp" android:focusable="true" android:visibility="2" android:layout_width="-2" android:layout_height="-1" android:src="@drawable/abs__ic_clear" android:contentDescription="@string/abs__searchview_description_clear" style="@style/ActionBarButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="0" android:id="@id/abs__submit_area" android:background="@drawable/abs__textfield_search_right_selected_holo_dark" android:layout_width="-2" android:layout_height="-1">
+            <ImageView android:layout_gravity="10" android:id="@id/search_up" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:layout_width="-2" android:layout_height="-1" android:src="@drawable/button_up" android:contentDescription="@string/search_earlier" style="@style/ActionBarButtonStyle" />
+            <ImageView android:layout_gravity="10" android:id="@id/search_down" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:layout_width="-2" android:layout_height="-1" android:src="@drawable/button_down" android:contentDescription="@string/search_later" style="@style/ActionBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

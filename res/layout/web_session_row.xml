@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="@drawable/panel_mid" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="@dimen/card_h_padding" android:layout_marginRight="@dimen/card_h_padding"
+    <LinearLayout android:gravity="10" android:orientation="0" android:background="@drawable/selector_orange_gradient" android:paddingLeft="@dimen/list_row_padding" android:paddingTop="8dp" android:paddingRight="@dimen/list_row_padding" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-2">
+        <ImageView android:id="@id/avatar" android:layout_width="@dimen/thumbnail_size" android:layout_height="@dimen/thumbnail_size" android:layout_marginTop="@dimen/thumbnail_padding" android:layout_marginRight="@dimen/thumbnail_padding_right" android:layout_marginBottom="@dimen/thumbnail_padding" android:src="@drawable/active_connections_chrome" android:scaleType="3" />
+        <LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+            <com.whatsapp.TextEmojiLabel android:layout_gravity="3" android:id="@id/name" android:layout_width="-2" android:layout_height="-2" style="@style/ListItemTitle" />
+            <com.whatsapp.TextEmojiLabel android:layout_gravity="3" android:id="@id/status" android:layout_width="-2" android:layout_height="-2" android:singleLine="false" style="@style/ListItemSubtitle" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@drawable/divider_gray" android:layout_width="-1" android:layout_height="0,5dp" />
+</LinearLayout>

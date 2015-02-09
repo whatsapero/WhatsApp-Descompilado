@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+    <com.whatsapp.TouchImageView android:id="@id/picture" android:layout_width="-1" android:layout_height="-1" android:scaleType="3" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_centerInParent="true" />
+    <TextView android:id="@id/message" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_centerInParent="true" />
+</RelativeLayout>

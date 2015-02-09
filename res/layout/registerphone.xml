@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ScrollView android:id="@id/scroll_view" android:layout_width="-1" android:layout_height="-2">
+        <LinearLayout android:orientation="1" android:padding="8dp" android:layout_width="-1" android:layout_height="-1"
+            <LinearLayout android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2">
+                <TextView android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="-1" android:text="@string/register_sms_one_time" android:layout_weight="1.0" style="@style/Text.Description" />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="6dp">
+                <TextView android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="0dp" android:layout_width="-1" android:text="@string/register_phone_number_code_confirm" android:layout_weight="1.0" style="@style/Text.Description" />
+                <TextView android:gravity="3" android:id="@id/register_phone_country" android:visibility="2" android:layout_width="-1" android:layout_height="-2" style="@style/Text.FieldHeader" />
+                <EditText android:ellipsize="3" android:gravity="11" android:id="@id/registration_country" android:background="@drawable/spinner_background_holo_light" android:focusableInTouchMode="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="16dp" android:singleLine="true" android:editable="false" android:inputType="0" />
+                <TextView android:gravity="3" android:id="@id/register_phone_country_code" android:visibility="2" android:layout_width="-1" android:layout_height="-2" style="@style/Text.FieldHeader" />
+                <LinearLayout android:gravity="10" android:orientation="0" android:id="@id/registration_fields" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="16dp">
+                    <TextView android:textSize="20sp" android:textColor="#b8b8b8" android:layout_width="-2" android:layout_height="-2" android:text="+" />
+                    <EditText android:gravity="11" android:id="@id/registration_cc" android:layout_width="@dimen/enter_phone_number_cc_width" android:layout_height="-2" android:singleLine="true" android:digits="0123456789" android:inputType="3" />
+                    <EditText android:textColor="#000000" android:textColorHint="#888888" android:ellipsize="3" android:id="@id/registration_phone" android:layout_width="0dp" android:layout_height="-2" android:hint="@string/register_phone_your_number" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="3" android:imeOptions="6" />
+                    <Button android:textSize="17sp" android:id="@id/registration_submit" android:layout_width="60dp" android:layout_height="-2" android:minHeight="0dp" android:text="@string/ok" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

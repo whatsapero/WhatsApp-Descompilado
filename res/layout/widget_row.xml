@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:id="@id/widget_row" android:paddingLeft="13dp" android:paddingTop="8dp" android:paddingRight="13dp" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-1">
+        <TextView android:textSize="18sp" android:textColor="0x106000c" android:ellipsize="3" android:id="@id/heading" android:layout_width="0dp" android:layout_height="-2" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12sp" android:textColor="#808080" android:ellipsize="3" android:id="@id/date" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" android:textAllCaps="true" />
+    </LinearLayout>
+    <TextView android:textSize="13,5sp" android:textColor="#333333" android:ellipsize="3" android:id="@id/content" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="-2dp" />
+</LinearLayout>

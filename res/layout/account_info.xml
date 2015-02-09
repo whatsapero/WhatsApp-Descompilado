@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ScrollView android:layout_width="-1" android:layout_height="-1">
+        <LinearLayout android:orientation="1" android:padding="8dp" android:layout_width="-1" android:layout_height="-2"
+            <LinearLayout android:id="@id/choose_friend_panel" android:background="@drawable/panel" android:padding="20dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+                <Button android:textSize="14sp" android:textStyle="1" android:textColor="#515151" android:id="@id/choose_friend_button" android:background="@drawable/reg_button" android:paddingLeft="12dp" android:paddingRight="24dp" android:layout_width="-1" android:layout_height="@dimen/account_info_btn_height" android:text="@string/pay_for_a_friend_choose_contact" android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="0" android:id="@id/user_details_panel" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2"
+                <LinearLayout android:gravity="10" android:orientation="0" android:padding="6dp" android:layout_width="-1" android:layout_height="-2">
+                    <ImageView android:id="@id/friend_photo" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:layout_marginLeft="@dimen/list_row_padding" android:src="@drawable/avatar_contact" android:scaleType="3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0"
+                        <LinearLayout android:orientation="0" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="-1" android:layout_height="-2">
+                            <TextView android:textSize="14,5sp" android:textColor="#aeaeae" android:id="@id/account_info_row1_label" android:layout_width="0dp" android:layout_height="-2" android:text="@string/account_info_account_num" android:layout_weight="1.0" />
+                            <TextView android:textSize="16sp" android:textColor="@color/section_text" android:layout_gravity="3" android:id="@id/account_info_row1_value" android:layout_width="-2" android:layout_height="-2" android:text="+1 (555) 555-1212" />
+                        </LinearLayout>
+                        <View android:background="#e2e2e2" android:layout_width="-1" android:layout_height="1dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" />
+                        <LinearLayout android:orientation="0" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="-1" android:layout_height="-2">
+                            <TextView android:textSize="14,5sp" android:textColor="#aeaeae" android:id="@id/account_info_row2_label" android:layout_width="0dp" android:layout_height="-2" android:text="@string/account_info_expiration" android:layout_weight="1.0" />
+                            <TextView android:textSize="16sp" android:textColor="@color/section_text" android:gravity="3" android:id="@id/account_info_row2_value" android:layout_width="-2" android:layout_height="-2" android:text="09/22/2011" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageButton android:layout_gravity="11" android:id="@id/account_info_remove_friend" android:background="@drawable/selector_orange_gradient" android:padding="4dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/broadcast_cross" android:scaleType="5" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:id="@id/payment_panel" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="6dp">
+                <TextView android:textSize="14sp" android:textColor="@color/section_text" android:gravity="3" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2" android:text="@string/account_info_purchase_extension_for" android:textAllCaps="true" />
+                <RadioGroup android:orientation="0" android:id="@id/extension_group" android:layout_width="-1" android:layout_height="-2" android:checkedButton="@id/sku1">
+                    <LinearLayout android:gravity="11" android:orientation="1" android:id="@id/sku1_group" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                        <TextView android:textStyle="1" android:textColor="#626262" android:id="@id/sku1_text" android:paddingBottom="3dp" android:layout_width="-2" android:layout_height="-2" android:text="1 Year" android:textAllCaps="true" />
+                        <TextView android:textColor="#626262" android:id="@id/sku1_price" android:layout_width="-2" android:layout_height="-2" android:text="US$0.99" />
+                        <RadioButton android:id="@id/sku1" android:background="#00000000" android:layout_width="-2" android:layout_height="-2" android:button="@pbe/MD5" android:drawableLeft="?unknown_attr_ref: 1010219" android:drawablePadding="0dp" />
+                        <TextView android:textSize="13sp" android:textColor="#bfbfbf" android:id="@id/sku1_discount" android:layout_width="-2" android:layout_height="-2" android:text="" android:textAllCaps="true" />
+                    </LinearLayout>
+                    <View android:background="#e2e2e2" android:layout_width="1dp" android:layout_height="-1" />
+                    <LinearLayout android:gravity="11" android:orientation="1" android:id="@id/sku3_group" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                        <TextView android:textStyle="1" android:textColor="#626262" android:id="@id/sku3_text" android:paddingBottom="3dp" android:layout_width="-2" android:layout_height="-2" android:text="3 Years" android:textAllCaps="true" />
+                        <TextView android:textColor="#626262" android:id="@id/sku3_price" android:layout_width="-2" android:layout_height="-2" android:text="US$1.79" />
+                        <RadioButton android:id="@id/sku3" android:background="#00000000" android:layout_width="-2" android:layout_height="-2" android:button="@pbe/MD5" android:drawableLeft="?unknown_attr_ref: 1010219" android:drawablePadding="0dp" />
+                        <TextView android:textColor="#bfbfbf" android:id="@id/sku3_discount" android:layout_width="-2" android:layout_height="-2" android:text="@string/discount_10_percent" android:textAllCaps="true" />
+                    </LinearLayout>
+                    <View android:background="#e2e2e2" android:layout_width="1dp" android:layout_height="-1" />
+                    <LinearLayout android:gravity="11" android:orientation="1" android:id="@id/sku5_group" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                        <TextView android:textStyle="1" android:textColor="#626262" android:id="@id/sku5_text" android:paddingBottom="3dp" android:layout_width="-2" android:layout_height="-2" android:text="5 Years" android:textAllCaps="true" />
+                        <TextView android:textColor="#626262" android:id="@id/sku5_price" android:layout_width="-2" android:layout_height="-2" android:text="US$3.99" />
+                        <RadioButton android:id="@id/sku5" android:background="#00000000" android:layout_width="-2" android:layout_height="-2" android:button="@pbe/MD5" android:drawableLeft="?unknown_attr_ref: 1010219" android:drawablePadding="0dp" />
+                        <TextView android:textColor="#bfbfbf" android:id="@id/sku5_discount" android:layout_width="-2" android:layout_height="-2" android:text="@string/discount_25_percent" android:textAllCaps="true" />
+                    </LinearLayout>
+                </RadioGroup>
+                <LinearLayout android:orientation="1" android:paddingLeft="16dp" android:paddingTop="18dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2">
+                    <Button android:textSize="14sp" android:textStyle="1" android:textColor="#515151" android:id="@id/google_payment_button" android:background="@drawable/reg_button" android:paddingLeft="12dp" android:paddingRight="24dp" android:layout_width="-1" android:layout_height="@dimen/account_info_btn_height" android:text="@string/google_payment_button" android:drawableLeft="@drawable/via_google_wallet_c" android:textAllCaps="true" />
+                    <Button android:textSize="14sp" android:textStyle="1" android:textColor="#515151" android:id="@id/website_payment_button" android:background="@drawable/reg_button" android:paddingLeft="12dp" android:paddingRight="24dp" android:visibility="2" android:layout_width="-1" android:layout_height="@dimen/account_info_btn_height" android:layout_marginTop="10dp" android:text="@string/payment_issues_button" android:drawableLeft="@drawable/em_1f30e" android:textAllCaps="true" />
+                    <Button android:textSize="14sp" android:textStyle="1" android:textColor="#515151" android:id="@id/send_payment_button" android:background="@drawable/reg_button" android:paddingLeft="12dp" android:paddingRight="24dp" android:layout_width="-1" android:layout_height="@dimen/account_info_btn_height" android:layout_marginTop="10dp" android:text="@string/send_payment_button" android:drawableLeft="@drawable/via_mail_c" android:textAllCaps="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="11" android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="6dp">
+                <TextView android:textSize="15sp" android:textColor="@color/section_text" android:gravity="11" android:id="@id/help_link" android:padding="16dp" android:layout_width="-1" android:layout_height="-2" android:text="@string/why_dont_sell_adds" />
+            </LinearLayout>
+            <TextView android:textSize="14,3dp" android:textColor="#939393" android:id="@id/footer_description" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="-2" android:layout_height="-2" android:text="@string/account_info_desc" android:lineSpacingMultiplier="1.25" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

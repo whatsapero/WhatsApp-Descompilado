@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ebebeb" android:padding="8dp" android:layout_width="-1" android:layout_height="-1" android:fillViewport="true">
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1"
+        <LinearLayout android:orientation="1" android:background="@drawable/panel" android:paddingLeft="@dimen/card_h_padding2" android:paddingTop="@dimen/card_v_padding2" android:paddingRight="@dimen/card_h_padding2" android:paddingBottom="@dimen/card_v_padding2" android:layout_width="-1" android:layout_height="-1">
+            <ImageView android:layout_gravity="11" android:paddingTop="@dimen/card_v_padding2" android:paddingBottom="@dimen/card_v_padding3" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/insufficient_storage_icon" />
+            <TextView android:textSize="18sp" android:textColor="0x106000c" android:layout_width="-1" android:layout_height="-2" android:text="@string/insufficient_internal_storage_space_title" />
+            <TextView android:textSize="18sp" android:textColor="#ff707070" android:id="@id/insufficient_storage_description_textview" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="10dp" android:fontFamily="sans-serif-light" />
+            <Button android:textColor="0x106000b" android:id="@id/btn_storage_settings" android:background="@drawable/btn_green" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="24dp" android:text="@string/btn_storage_settings" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

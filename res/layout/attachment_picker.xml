@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="15" android:orientation="1" android:id="@id/paper_clip_layout" android:background="@drawable/abs__menu_dropdown_panel_holo_dark" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0dp" android:layout_marginTop="-2dp" android:layout_marginRight="7dp" android:layout_alignParentRight="true"
+    <LinearLayout android:gravity="10" android:orientation="0" android:layout_width="-2" android:layout_height="-2">
+        <FrameLayout android:id="@id/pickfiletype_gallery_image" android:layout_width="@dimen/quickaction_button_h" android:layout_height="@dimen/quickaction_button_v" style="@style/ActionBarButtonStyle">
+            <com.whatsapp.CondensedTextView android:textColor="#eeeeee" android:ellipsize="3" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:text="@string/attach_picture_from_gallery" android:maxLines="1" android:singleLine="true" android:drawableTop="@drawable/attach_gallery" />
+        </FrameLayout>
+        <ImageView android:layout_width="-2" android:layout_height="-1" android:src="@drawable/divider_attach_vertical" android:scaleType="1" />
+        <FrameLayout android:id="@id/pickfiletype_camera_image" android:layout_width="@dimen/quickaction_button_h" android:layout_height="@dimen/quickaction_button_v" style="@style/ActionBarButtonStyle">
+            <com.whatsapp.CondensedTextView android:textColor="#eeeeee" android:ellipsize="3" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:text="@string/attach_picture_from_camera" android:maxLines="1" android:singleLine="true" android:drawableTop="@drawable/attach_camera" />
+        </FrameLayout>
+        <ImageView android:layout_width="-2" android:layout_height="-1" android:src="@drawable/divider_attach_vertical" android:scaleType="1" />
+        <FrameLayout android:id="@id/pickfiletype_gallery_video" android:layout_width="@dimen/quickaction_button_h" android:layout_height="@dimen/quickaction_button_v" style="@style/ActionBarButtonStyle">
+            <com.whatsapp.CondensedTextView android:textColor="#eeeeee" android:ellipsize="3" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:scaleType="5" android:text="@string/attach_video" android:maxLines="1" android:singleLine="true" android:drawableTop="@drawable/attach_video" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="-1" android:layout_height="-2" android:src="@drawable/divider_attach_horizontal" android:scaleType="1" />
+    <LinearLayout android:gravity="10" android:orientation="0" android:layout_width="-2" android:layout_height="-2">
+        <FrameLayout android:id="@id/pickfiletype_audio" android:layout_width="@dimen/quickaction_button_h" android:layout_height="@dimen/quickaction_button_v" style="@style/ActionBarButtonStyle">
+            <com.whatsapp.CondensedTextView android:textColor="#eeeeee" android:ellipsize="3" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:scaleType="5" android:text="@string/attach_audio" android:maxLines="1" android:singleLine="true" android:drawableTop="@drawable/attach_audio" />
+        </FrameLayout>
+        <ImageView android:layout_width="-2" android:layout_height="-1" android:src="@drawable/divider_attach_vertical" android:scaleType="1" />
+        <FrameLayout android:id="@id/pickfiletype_location" android:layout_width="@dimen/quickaction_button_h" android:layout_height="@dimen/quickaction_button_v" style="@style/ActionBarButtonStyle">
+            <com.whatsapp.CondensedTextView android:textColor="#eeeeee" android:ellipsize="3" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:scaleType="5" android:text="@string/attach_location" android:maxLines="1" android:singleLine="true" android:drawableTop="@drawable/attach_location" />
+        </FrameLayout>
+        <ImageView android:layout_width="-2" android:layout_height="-1" android:src="@drawable/divider_attach_vertical" android:scaleType="1" />
+        <FrameLayout android:id="@id/pickfiletype_contact" android:layout_width="@dimen/quickaction_button_h" android:layout_height="@dimen/quickaction_button_v" style="@style/ActionBarButtonStyle">
+            <com.whatsapp.CondensedTextView android:textColor="#eeeeee" android:ellipsize="3" android:gravity="11" android:layout_gravity="11" android:layout_width="-2" android:layout_height="-2" android:scaleType="5" android:text="@string/attach_contact" android:maxLines="1" android:singleLine="true" android:drawableTop="@drawable/attach_contact" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

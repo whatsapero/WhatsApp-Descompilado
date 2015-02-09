@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="-1" android:layout_height="96dp">
+    <com.whatsapp.gallerypicker.SquareImageView android:id="@id/thumbnail" android:layout_width="-1" android:layout_height="96dp" android:scaleType="6" />
+    <ImageView android:layout_gravity="11" android:id="@id/video_overlay" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="24dp" android:src="@drawable/ic_gallery_video_overlay" android:scaleType="5" />
+    <LinearLayout android:gravity="10" android:layout_gravity="50" android:orientation="0" android:background="#99000000" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingBottom="2dp" android:layout_width="-1" android:layout_height="-2">
+        <ImageView android:layout_gravity="10" android:id="@id/icon" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="6" />
+        <TextView android:textSize="13sp" android:textColor="#ffffffff" android:ellipsize="4" android:id="@id/title" android:layout_width="0dp" android:layout_height="-2" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="11sp" android:textColor="#ffaaaaaa" android:ellipsize="4" android:id="@id/count" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

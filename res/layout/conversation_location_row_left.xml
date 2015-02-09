@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="-2" android:layout_height="-2">
+    <com.whatsapp.DividerView android:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout android:orientation="1" android:id="@id/location_layout" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="9dp" android:layout_marginRight="40dp" android:layout_below="@id/date_divider" android:layout_alignParentLeft="true">
+        <RelativeLayout android:id="@id/large_layout" android:visibility="2" android:layout_width="256dp" android:layout_height="@dimen/media_message_thumb" />
+        <LinearLayout android:gravity="30" android:layout_gravity="13" android:orientation="0" android:id="@id/small_layout" android:layout_width="-2" android:layout_height="@dimen/media_message_thumb"
+            <LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="@dimen/media_message_thumb" android:layout_weight="1.0"
+                <LinearLayout android:layout_gravity="3" android:id="@id/name_in_group" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="8,5dp" android:layout_marginTop="4dp" android:layout_marginRight="8,5dp" android:layout_marginBottom="-6dp">
+                    <TextView android:textSize="@dimen/conversation_participant_name_tv" android:textColor="#000" android:id="@id/name_in_group_tv" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:singleLine="true" />
+                    <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_participant_name_tv" android:textColor="#999999" android:id="@id/pushname_in_group_tv" android:paddingLeft="12sp" android:layout_width="-2" android:layout_height="-2" android:lines="1" android:singleLine="true" />
+                </LinearLayout>
+                <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_location_name" android:textColor="#000" android:ellipsize="3" android:gravity="10" android:id="@id/place_name" android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingRight="8dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:maxLines="1" android:singleLine="true" />
+                <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="0dp" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/conversation_location_address" android:textColor="#99000000" android:ellipsize="3" android:id="@id/place_address" android:paddingLeft="10dp" android:paddingRight="8dp" android:visibility="2" android:layout_width="0dp" android:layout_height="-2" android:maxLines="2" android:lines="2" android:layout_weight="1.0" />
+                    <TextView android:layout_gravity="50" android:id="@id/date_group" android:paddingRight="4dp" android:paddingBottom="6dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" style="@style/ConversationDate" />
+                </LinearLayout>
+                <View android:layout_width="@dimen/conversation_control_button_width" android:layout_height="0dp" />
+                <TextView android:layout_gravity="5" android:id="@id/date" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="-2" android:layout_height="-2" style="@style/ConversationDate" />
+                <Button android:id="@id/control_btn" android:layout_width="-1" style="@style/ConversationControlButtonIncoming" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/map_frame" android:layout_width="@dimen/media_message_thumb" android:layout_height="@dimen/media_message_thumb" android:layout_centerVertical="true">
+                <ImageView android:id="@id/thumb" android:background="#00000000" android:layout_width="@dimen/media_message_thumb" android:layout_height="@dimen/media_message_thumb" android:scaleType="6" />
+                <Button android:id="@id/thumb_button" android:background="@drawable/media_overlay_incoming" android:layout_width="@dimen/media_message_thumb" android:layout_height="@dimen/media_message_thumb" android:scaleType="3" />
+                <ProgressBar android:layout_gravity="11" android:id="@id/map_progressbar" android:visibility="2" android:layout_width="60dp" android:layout_height="60dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

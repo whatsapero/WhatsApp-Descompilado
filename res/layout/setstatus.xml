@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:padding="8dp" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2">
+        <FrameLayout style="@style/CardHeader">
+            <TextView android:id="@id/status_title" android:text="@string/current_status" style="@style/CardTitle" />
+            <TextView android:id="@id/status_info" style="@style/CardInfo" />
+            <View style="@style/CardSeparator" />
+        </FrameLayout>
+        <LinearLayout android:gravity="10" android:orientation="0" android:id="@id/status_layout" android:padding="6dp" android:layout_width="-1" android:layout_height="-2">
+            <com.whatsapp.TextEmojiLabel android:textSize="18sp" android:textColor="@color/black" android:gravity="10" android:layout_gravity="13" android:id="@id/status_tv" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="-2" android:maxLines="2" android:layout_weight="1.0" />
+            <FrameLayout android:layout_width="48dp" android:layout_height="48dp">
+                <View android:layout_gravity="13" android:background="@color/divider_gray" android:layout_width="1dp" android:layout_height="32dp" />
+                <ProgressBar android:layout_gravity="11" android:id="@id/progressbar_small" android:visibility="2" android:layout_width="-2" android:layout_height="-2" style="?unknown_attr_ref: 1010288" />
+                <ImageView android:layout_gravity="11" android:id="@id/round_more_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/btn_edit" style="@style/ActionBarButtonStyle" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="1" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp">
+        <FrameLayout style="@style/CardHeader">
+            <TextView android:id="@id/select_status_title" android:text="@string/select_status" style="@style/CardTitle" />
+            <TextView android:id="@id/select_status_info" style="@style/CardInfo" />
+            <View style="@style/CardSeparator" />
+        </FrameLayout>
+        <ListView android:id="@id/list" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" style="@style/List" />
+        <View android:id="@id/list_empty" android:layout_width="-1" android:layout_height="48dp" />
+    </LinearLayout>
+</LinearLayout>

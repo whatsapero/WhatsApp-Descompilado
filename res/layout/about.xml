@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/about_layout" android:background="@drawable/background" android:layout_width="-1" android:layout_height="-1">
+    <ScrollView android:layout_width="-1" android:layout_height="-1">
+        <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:layout_width="-1" android:layout_height="-1" android:layout_above="@id/a_bottom_bar" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+            <RelativeLayout android:gravity="11" android:layout_gravity="11" android:layout_width="-1" android:layout_height="-2">
+                <TextView android:textSize="20sp" android:textStyle="0" android:textColor="@color/white" android:gravity="11" android:layout_gravity="11" android:id="@id/eula_title" android:paddingTop="7dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="7dp" android:text="@string/title" />
+                <TextView android:textSize="16sp" android:textColor="#86a9a8" android:gravity="11" android:layout_gravity="11" android:id="@id/version" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="6dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp" android:layout_below="@id/eula_title" />
+                <ImageView android:layout_gravity="1" android:id="@id/logo" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:src="@drawable/about_logo" android:layout_below="@id/version" />
+                <TextView android:textSize="15sp" android:textColor="#86a9a8" android:gravity="11" android:layout_gravity="11" android:id="@id/eula_description" android:paddingLeft="4dp" android:paddingTop="10dp" android:paddingRight="4dp" android:paddingBottom="6dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/copyright1" android:layout_below="@id/logo" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="1" android:id="@id/eula_bottom_bar" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true"
+        <LinearLayout android:gravity="11" android:layout_gravity="11" android:orientation="1" android:background="@color/full_screen_footer" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" /> />
+</RelativeLayout>

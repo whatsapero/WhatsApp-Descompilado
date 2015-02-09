@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item android:state_pressed="true" android:drawable="@drawable/audio_scrubber_thumb_pressed" />
+    <item android:state_selected="true" android:drawable="@drawable/audio_scrubber_thumb_pressed" />
+    <item android:drawable="@drawable/audio_scrubber_thumb_normal" />
+</selector>

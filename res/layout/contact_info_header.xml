@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <View android:id="@id/header_placeholder" android:layout_width="-1" android:layout_height="@dimen/info_screen_header" />
+    <LinearLayout android:orientation="1" android:id="@id/status_card" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="@dimen/card_v_padding">
+        <FrameLayout style="@style/CardHeader">
+            <TextView android:id="@id/status_title" android:text="@string/contact_status" style="@style/CardTitle" />
+            <TextView android:id="@id/status_info" style="@style/CardInfo" />
+            <View style="@style/CardSeparator" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/status_btn" android:paddingLeft="2dp" android:layout_width="-1" android:layout_height="-2">
+            <com.whatsapp.TextEmojiLabel android:textSize="16sp" android:textColor="#ff707070" android:id="@id/status_tv" android:padding="10dp" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="1" android:id="@id/media_card" android:background="@drawable/panel" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="@dimen/card_v_padding">
+        <FrameLayout style="@style/CardHeader">
+            <TextView android:id="@id/media_title" android:text="@string/view_conversation_media" style="@style/CardTitle" />
+            <TextView android:id="@id/media_info" style="@style/CardInfo" />
+            <View style="@style/CardSeparator" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/media_btn" android:paddingLeft="3dp" android:layout_width="-1" android:layout_height="-2">
+            <HorizontalScrollView android:gravity="10" android:id="@id/media_scroller" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:scrollbars="0" android:fadingEdgeLength="8dp" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true" android:overScrollMode="2" android:requiresFadingEdge="1000">
+                <LinearLayout android:gravity="10" android:orientation="0" android:id="@id/media_thumbs" android:layout_width="-2" android:layout_height="-2" />
+            </HorizontalScrollView>
+        </RelativeLayout> />
+    <LinearLayout android:orientation="1" android:id="@id/groups_card" android:background="@drawable/panel_top" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="@dimen/card_v_padding">
+        <FrameLayout style="@style/CardHeader">
+            <TextView android:id="@id/groups_title" android:text="@string/groups_participation" style="@style/CardTitle" />
+            <TextView android:id="@id/groups_info" style="@style/CardInfo" />
+            <View style="@style/CardSeparator" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="10" android:orientation="0" android:paddingLeft="@dimen/horizontal_padding" android:paddingRight="@dimen/horizontal_padding" android:layout_width="-1" android:layout_height="@dimen/contactpicker_help_row_height">
+    <TextView android:textSize="16sp" android:textStyle="1" android:textColor="@color/black" android:ellipsize="3" android:gravity="13" android:layout_gravity="13" android:id="@id/name" android:layout_width="0dp" android:layout_height="-2" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="15sp" android:textColor="@color/dark_gray" android:ellipsize="3" android:gravity="15" android:layout_gravity="15" android:id="@id/number" android:paddingLeft="6dp" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="12dp" android:insetRight="12dp">
+    <shape android:shape="0">
+        <solid android:color="#ffe5e5e5" />
+    </shape>
+</inset>

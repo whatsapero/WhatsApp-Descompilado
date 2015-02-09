@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <View android:id="@id/header_placeholder" android:layout_width="-1" android:layout_height="@dimen/info_screen_header" />
+    <LinearLayout android:orientation="1" android:id="@id/calls_card" android:background="@drawable/panel_top" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="@dimen/card_v_padding">
+        <FrameLayout style="@style/CardHeader">
+            <TextView android:id="@id/calls_title" style="@style/CardTitle" />
+            <TextView android:id="@id/calls_info" style="@style/CardInfo" />
+            <View style="@style/CardSeparator" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

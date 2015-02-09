@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <FrameLayout android:layout_width="-1" android:layout_height="0dp" android:layout_weight="1.0">
+        <com.whatsapp.VideoPreviewLayout android:layout_width="-1" android:layout_height="-1" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+            <FrameLayout android:id="@id/video_holder" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="-1" android:layout_height="-2">
+                <com.whatsapp.VideoView android:layout_gravity="11" android:id="@id/video" android:layout_width="-1" android:layout_height="-1" android:scaleType="3" />
+                <ImageView android:layout_gravity="11" android:id="@id/video_control" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/mviewer_videoplay" android:scaleType="5" />
+                <ImageView android:layout_gravity="11" android:id="@id/thumb" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:scaleType="3" android:adjustViewBounds="true" android:maxHeight="196dp" android:minHeight="196dp" />
+                <TextView android:textColor="0x106000b" android:gravity="11" android:layout_gravity="51" android:id="@id/trim_info" android:background="@drawable/video_preview_label_background" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="1" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp" />
+                <TextView android:textColor="0x106000b" android:layout_gravity="53" android:id="@id/size" android:background="@drawable/video_preview_label_background" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="0" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp" />
+                <TextView android:textColor="0x106000b" android:layout_gravity="55" android:id="@id/duration" android:background="@drawable/video_preview_label_background" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="0" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp" />
+            </FrameLayout>
+            <LinearLayout android:orientation="1" android:id="@id/video_controls" android:layout_width="-1" android:layout_height="-2">
+                <SeekBar android:layout_gravity="11" android:id="@id/seekbar" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" android:maxHeight="13dp" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/audio_scrubber_track" android:progressDrawable="@drawable/audio_scrubber_track" android:minHeight="13dp" android:thumb="@drawable/seek_thumb_mid_normal" android:thumbOffset="16dp" />
+                <FrameLayout android:layout_width="-1" android:layout_height="-2"
+                    <FrameLayout android:id="@id/timeline_holder" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="-1" android:layout_height="40dp" />
+                    <FrameLayout android:id="@id/range_bar_holder" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="-1" android:layout_height="-2" /> />
+            </LinearLayout>
+            <LinearLayout android:orientation="1" android:id="@id/video_info" android:padding="8dp" android:layout_width="-1" android:layout_height="-2">
+                <include layout="@layout/media_caption_entry" />
+            </LinearLayout>
+        </com.whatsapp.VideoPreviewLayout>
+        <View android:id="@id/loading" android:background="#ff000000" android:layout_width="-1" android:layout_height="-1" />
+    </FrameLayout>
+    <FrameLayout android:background="#313131" android:layout_width="-1" android:layout_height="-2">
+        <View android:background="#4e4e4e" android:layout_width="-1" android:layout_height="1,5dp" />
+        <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:baselineAligned="false">
+            <Button android:textColor="?attr/textColorPrimary" android:ellipsize="3" android:id="@id/cancel_btn" android:layout_width="0dp" android:layout_height="-2" android:text="@string/cancel" android:layout_weight="1.0" style="@style/ActionBarButtonStyle" />
+            <View android:background="#5d5d5d" android:layout_width="1dp" android:layout_height="-1" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" />
+            <Button android:textColor="?attr/textColorPrimary" android:ellipsize="3" android:id="@id/ok_btn" android:layout_width="0dp" android:layout_height="-2" android:text="@string/ok" android:layout_weight="1.0" style="@style/ActionBarButtonStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

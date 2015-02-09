@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView android:id="@id/date_divider" style="@style/DateDivider" />
+    <LinearLayout android:gravity="15" android:id="@id/text_layout" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="40dp" android:layout_marginRight="@dimen/conversation_row_margin" android:minHeight="30dp" android:layout_below="@id/date_divider" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="-2" android:layout_height="-2" android:src="@drawable/outgoing_call" />
+        <TextView android:layout_gravity="55" android:id="@id/date" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" style="@style/ConversationDate" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="@dimen/conversations_row_height">
+    <ImageView android:id="@id/contact_photo" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:layout_marginLeft="@dimen/list_row_padding" android:scaleType="3" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/contactpicker_ckb" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="@dimen/list_row_padding" android:scaleType="3" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="1" android:paddingLeft="@dimen/list_row_padding" android:layout_width="-1" android:layout_height="-2" android:layout_toLeftOf="@id/contactpicker_ckb" android:layout_toRightOf="@id/contact_photo" android:layout_centerVertical="true">
+        <TextView android:layout_gravity="3" android:id="@id/chat_able_contacts_row_name" android:layout_width="-2" android:layout_height="-2" style="@style/ListItemTitle" />
+        <TextView android:textSize="14sp" android:textColor="@color/contact_phone_type" android:ellipsize="3" android:layout_gravity="3" android:id="@id/chat_able_contacts_row_status" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

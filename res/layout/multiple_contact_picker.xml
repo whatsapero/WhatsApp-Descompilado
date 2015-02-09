@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+    <ListView android:id="0x102000a" android:paddingLeft="@dimen/contact_list_padding_left" android:paddingRight="@dimen/contact_list_padding_right" android:layout_width="-1" android:layout_height="0dp" android:cacheColorHint="0x106000d" android:divider="@drawable/divider_gray" android:dividerHeight="0,5dp" android:choiceMode="1" android:layout_weight="1.0" android:headerDividersEnabled="false" android:footerDividersEnabled="true" />
+    <include android:id="@id/contacts_empty" android:layout_below="@id/conversation_header" layout="@layout/empty_tell_a_friend" />
+</LinearLayout>

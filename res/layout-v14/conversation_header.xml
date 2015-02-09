@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="11" android:orientation="1" android:background="@drawable/conversation_header_background" android:layout_width="-1" android:layout_height="-2">
+    <Button android:textSize="13sp" android:textStyle="1" android:textColor="#ccffffff" android:id="@id/load_earlier_msgs_btn" android:background="?unknown_attr_ref: 101039c" android:layout_width="-1" android:layout_height="-1" android:text="@string/load_earlier_messages" android:textAllCaps="true" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.whatsapp.DividerView android:id="@id/date_divider" style="@style/DateDivider" />
+    <RelativeLayout android:gravity="10" android:paddingLeft="3dp" android:paddingTop="3dp" android:paddingRight="0dp" android:paddingBottom="3dp" android:layout_width="280dp" android:layout_height="-2" android:layout_marginLeft="40dp" android:layout_marginRight="9dp" android:layout_below="@id/date_divider" android:layout_alignParentRight="true">
+        <FrameLayout android:id="@id/picture_frame" android:paddingRight="11dp" android:layout_width="71dp" android:layout_height="60dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/picture" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/avatar_contact" android:scaleType="3" />
+            <ImageView android:layout_gravity="50" android:background="@drawable/pic_overlay" android:layout_width="-1" android:layout_height="-2" android:scaleType="3" />
+        </FrameLayout>
+        <ImageView android:id="@id/mic_overlay" android:background="@drawable/mic_background_outgoing" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/mic_new" android:scaleType="3" android:layout_alignRight="@id/picture_frame" android:layout_alignBottom="@id/picture_frame" />
+        <View android:id="@id/separator" android:background="#22000000" android:visibility="1" android:layout_width="0,5dp" android:layout_height="-1" android:layout_marginTop="4dp" android:layout_marginRight="8,5dp" android:layout_above="@id/mic_overlay" android:layout_alignRight="@id/picture_frame" />
+        <TextView android:textSize="12,5sp" android:textStyle="1" android:textColor="0x106000b" android:id="@id/duration" android:background="#00000000" android:paddingLeft="4dp" android:paddingRight="4dp" android:paddingBottom="0dp" android:layout_width="-2" android:layout_height="-2" android:text="0:30" android:lines="1" android:singleLine="true" android:layout_alignLeft="@id/picture_frame" android:layout_alignBottom="@id/picture_frame" />
+        <ImageButton android:gravity="11" android:id="@id/control_btn" android:background="#00000000" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="2dp" android:src="@drawable/inline_audio_play" android:scaleType="5" android:layout_alignLeft="@id/separator" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/controls" android:layout_width="-1" android:layout_height="-2" android:layout_toRightOf="@id/control_btn" android:layout_centerVertical="true">
+            <ProgressBar android:layout_gravity="11" android:id="@id/progress_bar" android:paddingRight="16dp" android:layout_width="-1" android:layout_height="-2" android:maxHeight="16dp" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal_holo" android:progressDrawable="@drawable/download_progress" android:minHeight="16dp" />
+            <com.whatsapp.VoiceNoteSeekBar android:layout_gravity="11" android:id="@id/audio_seekbar" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:layout_width="-1" android:layout_height="-2" android:maxHeight="13dp" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/inline_scrubber_progress" android:progressDrawable="@drawable/inline_scrubber_progress" android:minHeight="13dp" android:thumb="@drawable/inline_scrubber_thumb" android:thumbOffset="16dp" />
+            <TextView android:textColor="#66000000" android:layout_gravity="11" android:id="@id/description" android:layout_width="-1" android:layout_height="-2" android:text="0.6MB" />
+        </FrameLayout>
+        <LinearLayout android:gravity="10" android:orientation="0" android:id="@id/conversation_layout_gravity_right_ar" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="1dp" android:layout_width="-2" android:layout_height="-2" android:layout_alignRight="@id/controls" android:layout_alignBottom="@id/picture_frame">
+            <TextView android:layout_gravity="5" android:id="@id/date" android:layout_width="-2" android:layout_height="-2" style="@style/ConversationDate" />
+            <ImageView android:id="@id/status" android:paddingLeft="2dp" android:layout_width="-2" android:layout_height="-2" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

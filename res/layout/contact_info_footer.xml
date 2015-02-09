@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+    <FrameLayout android:id="@id/phones_header" style="@style/CardHeader">
+        <TextView android:id="@id/phones_title" android:text="@string/contact_phone" style="@style/CardTitle" />
+        <TextView style="@style/CardInfo" />
+        <View style="@style/CardSeparator" />
+    </FrameLayout>
+    <LinearLayout android:gravity="13" android:id="@id/content" android:layout_width="-1" android:layout_height="@dimen/group_participant_row_height"
+        <LinearLayout android:gravity="13" android:id="@id/phone_btn" android:background="@drawable/selector_orange_gradient" android:paddingLeft="2dp" android:layout_width="0dp" android:layout_height="@dimen/group_participant_row_height" android:layout_weight="1.0"
+            <LinearLayout android:gravity="13" android:layout_gravity="13" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="1.0">
+                <TextView android:textSize="14sp" android:textColor="@color/contact_phone_type" android:gravity="10" android:layout_gravity="13" android:id="@id/phone_title" android:paddingLeft="10dp" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+                <TextView android:textSize="16sp" android:textColor="@color/contact_phone_type" android:gravity="10" android:layout_gravity="13" android:id="@id/phone_tv" android:paddingLeft="10dp" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:gravity="11" android:layout_gravity="10" android:id="@id/phone_icon" android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="8dp" android:src="@drawable/ic_action_call_dark" android:scaleType="5" />
+        </LinearLayout>
+        <View android:id="@id/whatsapp_btn_divider" android:background="#dedede" android:layout_width="1dp" android:layout_height="32dp" />
+        <ImageView android:gravity="11" android:layout_gravity="10" android:id="@id/whatsapp_btn" android:background="@drawable/selector_orange_gradient" android:layout_width="@dimen/group_participant_row_height" android:layout_height="@dimen/group_participant_row_height" android:src="@drawable/ic_action_message_dark" android:scaleType="5" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@drawable/divider_gray" android:layout_width="-1" android:layout_height="0,5dp" />
+</LinearLayout>

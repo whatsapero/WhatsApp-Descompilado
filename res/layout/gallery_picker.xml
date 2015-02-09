@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="-1" android:layout_height="-1">
+    <GridView android:id="@id/albums" android:paddingTop="2dp" android:layout_width="-1" android:layout_height="-1" android:listSelector="@drawable/grid_background" android:drawSelectorOnTop="true" android:cacheColorHint="#00000000" android:horizontalSpacing="4dp" android:verticalSpacing="4dp" android:stretchMode="2" android:columnWidth="@dimen/gallery_picker_folder_thumb_size" android:numColumns="-1" />
+</RelativeLayout>

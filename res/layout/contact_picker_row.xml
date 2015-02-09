@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout whatsapp:layout_width="-1" whatsapp:layout_height="-2"
+    <RelativeLayout whatsapp:id="@id/contactpicker_row_content" whatsapp:layout_width="-1" whatsapp:layout_height="-2" whatsapp:minHeight="@dimen/conversations_row_height">
+        <FrameLayout whatsapp:id="@id/contact_selector" whatsapp:paddingLeft="@dimen/list_row_padding" whatsapp:layout_width="-2" whatsapp:layout_height="@dimen/conversations_row_height" whatsapp:layout_alignParentLeft="true">
+            <com.whatsapp.ThumbnailButton whatsapp:enabled="false" whatsapp:layout_gravity="13" whatsapp:id="@id/contactpicker_row_photo" whatsapp:layout_width="@dimen/small_avatar_size" whatsapp:layout_height="@dimen/small_avatar_size" whatsapp:scaleType="3" whatsapp:tbtnRadius="@dimen/small_avatar_radius" whatsapp:tbtnForegroundOnly="true" />
+        </FrameLayout>
+        <TextView whatsapp:textSize="13sp" whatsapp:textColor="0x106000b" whatsapp:gravity="11" whatsapp:layout_gravity="5" whatsapp:id="@id/invite" whatsapp:background="@drawable/btn_invite" whatsapp:visibility="2" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:layout_marginRight="@dimen/list_row_padding" whatsapp:text="@string/invite" whatsapp:singleLine="true" whatsapp:layout_alignParentRight="true" whatsapp:layout_centerVertical="true" whatsapp:textAllCaps="true" />
+        <LinearLayout whatsapp:orientation="1" whatsapp:paddingLeft="@dimen/list_row_padding" whatsapp:paddingRight="@dimen/list_row_padding" whatsapp:layout_width="-1" whatsapp:layout_height="-2" whatsapp:layout_toLeftOf="@id/invite" whatsapp:layout_toRightOf="@id/contact_selector" whatsapp:layout_centerVertical="true" whatsapp:layout_alignWithParentIfMissing="true"
+            <LinearLayout whatsapp:gravity="10" whatsapp:orientation="0" whatsapp:layout_width="-1" whatsapp:layout_height="-2">
+                <FrameLayout whatsapp:layout_width="0dp" whatsapp:layout_height="-2" whatsapp:layout_weight="1.0">
+                    <com.whatsapp.TextEmojiLabel whatsapp:layout_gravity="13" whatsapp:id="@id/contactpicker_row_name" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:lines="1" style="@style/ListItemTitle" />
+                </FrameLayout>
+                <TextView whatsapp:textSize="12sp" whatsapp:textColor="@color/contact_phone_type" whatsapp:gravity="15" whatsapp:id="@id/contactpicker_row_phone_type" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:maxWidth="@dimen/contact_picker_type_max_width" whatsapp:singleLine="true" whatsapp:layout_weight="0.0" whatsapp:layout_alignParentRight="true" whatsapp:textAllCaps="true" />
+            </LinearLayout>
+            <com.whatsapp.TextEmojiLabel whatsapp:textStyle="0" whatsapp:gravity="3" whatsapp:layout_gravity="3" whatsapp:id="@id/contactpicker_row_status" whatsapp:layout_width="-2" whatsapp:layout_height="-2" whatsapp:lines="1" style="@style/ListItemSubtitle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
